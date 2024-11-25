@@ -1,6 +1,6 @@
 class Parameters:
     # Parameters
-    alpha=12*10**6;#bits
+    alpha=18*10**6;#bits
     T=2000;#seconds
     sigma=1;#Time slot (in seconds)
     C=5000;#cycle per bit

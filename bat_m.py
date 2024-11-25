@@ -1,5 +1,8 @@
 import numpy as np
 import math
+import os
+import json  # For saving data in JSON format
+from datetime import datetime
 import matplotlib.pyplot as plt
 from parameters import Parameters
 CAVs=np.load("./data/CAVs.npy",allow_pickle=True)
@@ -129,3 +132,44 @@ for iteration in range(num_iterations):
 
 print("\nOptimized Solution:", best_position)
 print("Best Fitness Value:", best_fitness)
+
+simulation_data={
+    "data_rate(mbit)":Parameters.alpha,
+    "simulation_runtime(seconds)":Parameters.T,
+    "road_length":Parameters.RoadLength,
+    "best_position":best_position.tolist(),
+    "best_fitness":best_fitness,
+    "UAV_number":dim,
+    "iteration_number":num_iterations,
+    "bat_number":num_bats,
+    "timestamp": datetime.now().isoformat()  # Add a unique timestamp for tracking
+}
+# Directory to save the final result
+output_dir = "simulation_results"
+os.makedirs(output_dir, exist_ok=True)
+# Save all data at the end
+output_file = os.path.join(output_dir, "final_results.json")
+# Check if the file exists and load existing data
+if os.path.exists(output_file):
+    with open(output_file, "r") as f:
+        try:
+            existing_data = json.load(f)
+            if isinstance(existing_data, dict):
+                # Convert the single dictionary to a list
+                existing_data = [existing_data]
+            elif not isinstance(existing_data, list):
+                raise ValueError("Unexpected JSON structure in the file.")
+        except json.JSONDecodeError:
+            # File exists but is empty or invalid
+            existing_data = []
+else:
+    existing_data = []
+
+# Append the new simulation run
+existing_data.append(simulation_data)
+
+# Save the updated data back to the file
+with open(output_file, "w") as f:
+    json.dump(existing_data, f, indent=4)
+
+print(f"New simulation results appended to {output_file}.")
