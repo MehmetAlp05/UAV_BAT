@@ -2,28 +2,7 @@ import numpy as np
 from classes.cav import CAV
 from classes.offload import Offload
 import math
-# Parameters
-alpha=12*10^6;#bits
-T=400;#seconds
-sigma=1;#Time slot (in seconds)
-C=1000;#cycle per bit
-f=2*10^9;#ycle per second
-G0=-50;#dB
-H=80;#meters
-N0=-130;#dBm/Hz
-B=20*10^6;#Hz
-Pm=35;#dBm
-Qm=6;#seconds
-RoadLength=1000;
-V_max = 20; # m/sec;
-U = 120; # m/sec
-v_0 = 4.03;#Mean rotor induced velocity in hover
-c_0 = 0.6;#Fuselage drag ratio
-epsilon = 1.225; #kg/m^3
-r = 0.05;#Rotor solidity
-A = 0.503; #m^2
-k = 10^(-28); #coefficient
-
+from parameters import Parameters
 
 # TASK GENERATION
 m=1
@@ -38,7 +17,7 @@ def TaskGenerator(runtime,num_event):
     return task_arrival
 
 ### CAVS
-car_rate=.2
+car_rate=.5
 sim_runtime=tau
 car_arrivals=np.random.poisson(car_rate,sim_runtime)
 print("car_arrivals\n",car_arrivals)
@@ -66,9 +45,9 @@ CAVs=np.array([CAV() for index,arrival in enumerate(indices_of_arrivals)])
 print("indices_of_arrivals\n",indices_of_arrivals)
 for index,arrival in enumerate(indices_of_arrivals):
     CAVs[index].EnteringTime=arrival
-    CAVs[index].LeavingTime=int(arrival+(RoadLength/CAVs[index].Speed))
-    CAVs[index].PositionVector=np.zeros(RoadLength)
-    for index_ in range(RoadLength):
+    CAVs[index].LeavingTime=int(arrival+(Parameters.T/CAVs[index].Speed))
+    CAVs[index].PositionVector=np.zeros(Parameters.T)
+    for index_ in range(Parameters.RoadLength):
         if index_ > arrival and index_<CAVs[index].LeavingTime:
             CAVs[index].PositionVector[index_]=CAVs[index].PositionVector[index_-1]+CAVs[index].Speed
     Tasks=TaskGenerator((CAVs[index].LeavingTime-CAVs[index].EnteringTime),1)
@@ -82,7 +61,7 @@ for index,arrival in enumerate(indices_of_arrivals):
     print("Position Vector",CAVs[index].PositionVector)
 
 np.save("./data/CAVs.npy",CAVs)
-allTask=np.zeros(1000)
+allTask=np.zeros(Parameters.T)
 for index in range(len(CAVs)):
     print("cav task time",index,CAVs[index].TaskTimes)
     for index_,element_ in enumerate(CAVs[index].TaskTimes):
@@ -94,13 +73,13 @@ for index in range(len(CAVs)):
     leavingTimes[index]=CAVs[index].LeavingTime
 np.save("./data/leavingTimes.npy",leavingTimes)
 def Gain(CAVPos,UAVPos):
-    gain=10**(G0/10)/(math.sqrt(H**2+(CAVPos-UAVPos)**2))**2;
+    gain=10**(Parameters.G0/10)/(math.sqrt(Parameters.H**2+(CAVPos-UAVPos)**2))**2;
     return gain
 gain=Gain(220,500)
 
 def UplinkRate(CAVPos,UAVPos):
     gain=Gain(CAVPos,UAVPos)
-    rate=math.log2(1+(gain*((10**(Pm/10))/(10**(N0/10)*B))))*B;
+    rate=math.log2(1+(gain*((10**(Parameters.Pm/10))/(10**(Parameters.N0/10)*Parameters.B))))*Parameters.B;
     return rate
 u_rate=UplinkRate(1000,0)
 print("uplink rate",u_rate)
