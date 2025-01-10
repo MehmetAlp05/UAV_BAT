@@ -6,7 +6,7 @@
         "best_position": [
             0.3099493604100377
         ],
-        "best_fitness": -0.9387755102040817,
+        "best_fitness": -0.9459,
         "UAV_number": 1,
         "iteration_number": 50,
         "bat_number": 10,
@@ -48,7 +48,7 @@
         "best_position": [
             999.0
         ],
-        "best_fitness": -0.8673469387755102,
+        "best_fitness": -0.6875,
         "UAV_number": 1,
         "iteration_number": 50,
         "bat_number": 10,
@@ -62,7 +62,7 @@
             0.0,
             641.5863849350862
         ],
-        "best_fitness": -0.9795918367346939,
+        "best_fitness": -0.9688,
         "UAV_number": 2,
         "iteration_number": 50,
         "bat_number": 10,
@@ -77,7 +77,7 @@
             999.1199870742769,
             0.11998707427688958
         ],
-        "best_fitness": -0.9795918367346939,
+        "best_fitness": -1.0,
         "UAV_number": 3,
         "iteration_number": 50,
         "bat_number": 10,
@@ -90,7 +90,7 @@
         "best_position": [
             999.0
         ],
-        "best_fitness": -0.7755102040816326,
+        "best_fitness": -0.4,
         "UAV_number": 1,
         "iteration_number": 50,
         "bat_number": 10,
@@ -104,7 +104,7 @@
             33.87727868544251,
             953.0719409793558
         ],
-        "best_fitness": -0.9489795918367347,
+        "best_fitness": -0.5818,
         "UAV_number": 2,
         "iteration_number": 50,
         "bat_number": 10,
@@ -119,40 +119,10 @@
             999.0,
             0.0
         ],
-        "best_fitness": -0.9591836734693877,
+        "best_fitness": -0.7636,
         "UAV_number": 3,
         "iteration_number": 50,
         "bat_number": 10,
         "timestamp": "2025-01-09T12:21:40.811738"
-    },
-    {
-        "data_rate(mbit)": 18000000,
-        "simulation_runtime(seconds)": 400,
-        "road_length": 1000,
-        "best_position": [
-            26.41094226124932,
-            636.1211144146943,
-            962.4114508273764
-        ],
-        "best_fitness": -0.9897959183673469,
-        "UAV_number": 3,
-        "iteration_number": 50,
-        "bat_number": 10,
-        "timestamp": "2025-01-09T12:41:00.222348"
-    },
-    {
-        "data_rate(mbit)": 50000000,
-        "simulation_runtime(seconds)": 400,
-        "road_length": 1000,
-        "best_position": [
-            253.32751445110276,
-            461.7882443957506,
-            926.2530502023797
-        ],
-        "best_fitness": -0.6224489795918368,
-        "UAV_number": 3,
-        "iteration_number": 50,
-        "bat_number": 10,
-        "timestamp": "2025-01-09T12:42:21.252051"
     }
 ]

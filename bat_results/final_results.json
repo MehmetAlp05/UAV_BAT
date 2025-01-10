@@ -1,0 +1,227 @@
+[
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 2000,
+        "road_length": 2000,
+        "best_position": [
+            0.0,
+            0.0,
+            999.0,
+            102.18670652043517,
+            999.0
+        ],
+        "best_fitness": -0.9458483754512635,
+        "UAV_number": 5,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "timestamp": "2024-11-25T13:22:20.858987"
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 2000,
+        "road_length": 2000,
+        "best_position": [
+            451.67225144400675
+        ],
+        "best_fitness": -0.6895306859205776,
+        "UAV_number": 1,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "timestamp": "2024-11-25T13:26:17.560892"
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 2000,
+        "road_length": 2000,
+        "best_position": [
+            291.73038887700835,
+            877.9476295903255
+        ],
+        "best_fitness": -0.8880866425992779,
+        "UAV_number": 2,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "timestamp": "2024-11-25T13:26:23.739000"
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 2000,
+        "road_length": 2000,
+        "best_position": [
+            330.9564594115919,
+            994.1078046959285,
+            46.5673550373893
+        ],
+        "best_fitness": -0.9422382671480144,
+        "UAV_number": 3,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "timestamp": "2024-11-25T13:26:30.328423"
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 2000,
+        "road_length": 2000,
+        "best_position": [
+            998.9898480978342,
+            -0.010151902165876156,
+            -0.010151902165876156,
+            430.36062798247787
+        ],
+        "best_fitness": -0.9675090252707581,
+        "UAV_number": 4,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "timestamp": "2024-11-25T13:26:37.714368"
+    },
+    {
+        "data_rate(mbit)": 6000000,
+        "simulation_runtime(seconds)": 2000,
+        "road_length": 2000,
+        "best_position": [
+            727.7636170255219
+        ],
+        "best_fitness": -0.8700361010830325,
+        "UAV_number": 1,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "timestamp": "2024-11-25T13:26:58.116034"
+    },
+    {
+        "data_rate(mbit)": 6000000,
+        "simulation_runtime(seconds)": 2000,
+        "road_length": 2000,
+        "best_position": [
+            0.13284279194543142,
+            999.1328427919454
+        ],
+        "best_fitness": -0.9963898916967509,
+        "UAV_number": 2,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "timestamp": "2024-11-25T13:27:02.695658"
+    },
+    {
+        "data_rate(mbit)": 6000000,
+        "simulation_runtime(seconds)": 2000,
+        "road_length": 2000,
+        "best_position": [
+            74.01482423005356,
+            923.5614228648732,
+            305.89351022164095
+        ],
+        "best_fitness": -0.9963898916967509,
+        "UAV_number": 3,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "timestamp": "2024-11-25T13:27:07.792972"
+    },
+    {
+        "data_rate(mbit)": 6000000,
+        "simulation_runtime(seconds)": 2000,
+        "road_length": 2000,
+        "best_position": [
+            999.0,
+            415.63256528059566,
+            65.42771458995583,
+            109.95303748762825
+        ],
+        "best_fitness": -0.9963898916967509,
+        "UAV_number": 4,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "timestamp": "2024-11-25T13:27:13.950874"
+    },
+    {
+        "data_rate(mbit)": 6000000,
+        "simulation_runtime(seconds)": 2000,
+        "road_length": 2000,
+        "best_position": [
+            21.258542368188337,
+            422.57690399359547,
+            734.4090134305436,
+            998.2986522317246,
+            397.5416891336376
+        ],
+        "best_fitness": -1.0,
+        "UAV_number": 5,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "timestamp": "2024-11-25T13:27:21.079418"
+    },
+    {
+        "data_rate(mbit)": 18000000,
+        "simulation_runtime(seconds)": 2000,
+        "road_length": 2000,
+        "best_position": [
+            988.3963330308661
+        ],
+        "best_fitness": -0.5848375451263538,
+        "UAV_number": 1,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "timestamp": "2024-11-25T13:27:31.289971"
+    },
+    {
+        "data_rate(mbit)": 18000000,
+        "simulation_runtime(seconds)": 2000,
+        "road_length": 2000,
+        "best_position": [
+            986.3427207756778,
+            270.8400723879651
+        ],
+        "best_fitness": -0.8303249097472925,
+        "UAV_number": 2,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "timestamp": "2024-11-25T13:27:36.635509"
+    },
+    {
+        "data_rate(mbit)": 18000000,
+        "simulation_runtime(seconds)": 2000,
+        "road_length": 2000,
+        "best_position": [
+            998.9427478963956,
+            -0.05725210360439877,
+            410.68032076472036
+        ],
+        "best_fitness": -0.9133574007220217,
+        "UAV_number": 3,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "timestamp": "2024-11-25T13:27:43.304874"
+    },
+    {
+        "data_rate(mbit)": 18000000,
+        "simulation_runtime(seconds)": 2000,
+        "road_length": 2000,
+        "best_position": [
+            388.52174233438734,
+            954.0874028672488,
+            767.4160642793795,
+            10.307205935238933
+        ],
+        "best_fitness": -0.9205776173285198,
+        "UAV_number": 4,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "timestamp": "2024-11-25T13:27:50.762927"
+    },
+    {
+        "data_rate(mbit)": 18000000,
+        "simulation_runtime(seconds)": 2000,
+        "road_length": 2000,
+        "best_position": [
+            998.963916808675,
+            -0.0360831913250358,
+            363.9511827101802,
+            998.963916808675,
+            -0.0360831913250358
+        ],
+        "best_fitness": -0.9169675090252708,
+        "UAV_number": 5,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "timestamp": "2024-11-25T13:27:59.829516"
+    }
+]

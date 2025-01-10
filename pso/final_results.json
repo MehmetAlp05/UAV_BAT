@@ -1,0 +1,175 @@
+[
+  {
+    "data_rate(mbit)": 12000000,
+    "simulation_runtime(seconds)": 2000,
+    "road_length": 2000,
+    "best_position": [
+      1088.55333021, 1571.10459291, 587.3468412, 591.03081076, 424.08489306
+    ],
+    "best_fitness": -1.0,
+    "UAV_number": 5,
+    "iteration_number": 100,
+    "particle_number": 10,
+    "timestamp": "2024-11-25T13:22:20.858987"
+  },
+  {
+    "data_rate(mbit)": 12000000,
+    "simulation_runtime(seconds)": 2000,
+    "road_length": 2000,
+    "best_position": [1292.71285941],
+    "best_fitness": -0.5652173913043478,
+    "UAV_number": 1,
+    "iteration_number": 50,
+    "particle_number": 10,
+    "timestamp": "2024-11-25T13:26:17.560892"
+  },
+  {
+    "data_rate(mbit)": 12000000,
+    "simulation_runtime(seconds)": 2000,
+    "road_length": 2000,
+    "best_position": [33.75150367, 1520.67049921],
+    "best_fitness": -0.826086956521739,
+    "UAV_number": 2,
+    "iteration_number": 50,
+    "particle_number": 10,
+    "timestamp": "2024-11-25T13:26:23.739000"
+  },
+  {
+    "data_rate(mbit)": 12000000,
+    "simulation_runtime(seconds)": 2000,
+    "road_length": 2000,
+    "best_position": [1608.12034851, 255.97788924, 1165.01036757],
+    "best_fitness": -0.9565217391304348,
+    "UAV_number": 3,
+    "iteration_number": 50,
+    "particle_number": 10,
+    "timestamp": "2024-11-25T13:26:30.328423"
+  },
+  {
+    "data_rate(mbit)": 12000000,
+    "simulation_runtime(seconds)": 2000,
+    "road_length": 2000,
+    "best_position": [264.45050118, 614.36245548, 1073.11083764, 1333.7577212],
+    "best_fitness": -0.9891304347826087,
+    "UAV_number": 4,
+    "iteration_number": 50,
+    "particle_number": 10,
+    "timestamp": "2024-11-25T13:26:37.714368"
+  },
+  {
+    "data_rate(mbit)": 6000000,
+    "simulation_runtime(seconds)": 2000,
+    "road_length": 2000,
+    "best_position": [198.31171822],
+    "best_fitness": -0.6060606060606061,
+    "UAV_number": 1,
+    "iteration_number": 50,
+    "particle_number": 10,
+    "timestamp": "2024-11-25T13:26:58.116034"
+  },
+  {
+    "data_rate(mbit)": 6000000,
+    "simulation_runtime(seconds)": 2000,
+    "road_length": 2000,
+    "best_position": [720.4081024, 1297.52489989],
+    "best_fitness": -0.9494949494949495,
+    "UAV_number": 2,
+    "iteration_number": 50,
+    "particle_number": 10,
+    "timestamp": "2024-11-25T13:27:02.695658"
+  },
+  {
+    "data_rate(mbit)": 6000000,
+    "simulation_runtime(seconds)": 2000,
+    "road_length": 2000,
+    "best_position": [1615.39148401, 650.38720802, 589.46477984],
+    "best_fitness": -1.0,
+    "UAV_number": 3,
+    "iteration_number": 50,
+    "particle_number": 10,
+    "timestamp": "2024-11-25T13:27:07.792972"
+  },
+  {
+    "data_rate(mbit)": 6000000,
+    "simulation_runtime(seconds)": 2000,
+    "road_length": 2000,
+    "best_position": [
+      1339.17842478, 1233.06020372, 189.58177535, 1786.15993645
+    ],
+    "best_fitness": -1.0,
+    "UAV_number": 4,
+    "iteration_number": 50,
+    "particle_number": 10,
+    "timestamp": "2024-11-25T13:27:13.950874"
+  },
+  {
+    "data_rate(mbit)": 6000000,
+    "simulation_runtime(seconds)": 2000,
+    "road_length": 2000,
+    "best_position": [
+      359.90446467, 265.70446599, 1836.58951361, 1024.08614557, 1764.03030942
+    ],
+    "best_fitness": -1.0,
+    "UAV_number": 5,
+    "iteration_number": 50,
+    "particle_number": 10,
+    "timestamp": "2024-11-25T13:27:21.079418"
+  },
+  {
+    "data_rate(mbit)": 18000000,
+    "simulation_runtime(seconds)": 2000,
+    "road_length": 2000,
+    "best_position": [826.68773451],
+    "best_fitness": -0.51041666666666664,
+    "UAV_number": 1,
+    "iteration_number": 50,
+    "particle_number": 10,
+    "timestamp": "2024-11-25T13:27:31.289971"
+  },
+  {
+    "data_rate(mbit)": 18000000,
+    "simulation_runtime(seconds)": 2000,
+    "road_length": 2000,
+    "best_position": [1119.19621109, 788.68268325],
+    "best_fitness": -0.7083333333333333,
+    "UAV_number": 2,
+    "iteration_number": 50,
+    "particle_number": 10,
+    "timestamp": "2024-11-25T13:27:36.635509"
+  },
+  {
+    "data_rate(mbit)": 18000000,
+    "simulation_runtime(seconds)": 2000,
+    "road_length": 2000,
+    "best_position": [622.76350132, 1830.27281705, 791.53042537],
+    "best_fitness": -0.875,
+    "UAV_number": 3,
+    "iteration_number": 50,
+    "particle_number": 10,
+    "timestamp": "2024-11-25T13:27:43.304874"
+  },
+  {
+    "data_rate(mbit)": 18000000,
+    "simulation_runtime(seconds)": 2000,
+    "road_length": 2000,
+    "best_position": [1325.22448327, 349.6626248, 1478.28061708, 829.05750171],
+    "best_fitness": -0.96875,
+    "UAV_number": 4,
+    "iteration_number": 50,
+    "particle_number": 10,
+    "timestamp": "2024-11-25T13:27:50.762927"
+  },
+  {
+    "data_rate(mbit)": 18000000,
+    "simulation_runtime(seconds)": 2000,
+    "road_length": 2000,
+    "best_position": [
+      1812.56975995, 458.30919678, 218.11690778, 973.67512588, 1357.96256081
+    ],
+    "best_fitness": -1.0,
+    "UAV_number": 5,
+    "iteration_number": 50,
+    "bat_number": 10,
+    "timestamp": "2024-11-25T13:27:59.829516"
+  }
+]

@@ -1,7 +1,6 @@
 import os
 import json
 import matplotlib.pyplot as plt
-from mpl_toolkits.mplot3d import Axes3D
 import numpy as np
 
 # File path
@@ -39,7 +38,7 @@ for run in runs:
     if data_rate is not None and uav_number is not None and best_fitness is not None:
         data_rates.append(data_rate)
         uav_numbers.append(int(uav_number))  # Ensure UAV numbers are integers
-        best_fitness_values.append(best_fitness)
+        best_fitness_values.append(-1 * best_fitness)  # Multiply fitness by -1
 
 # Ensure there is data to plot
 if not data_rates or not uav_numbers or not best_fitness_values:
@@ -58,12 +57,14 @@ ax1 = fig.add_subplot(121)
 unique_data_rates = np.unique(data_rates)
 for rate in unique_data_rates:
     mask = data_rates == rate
-    ax1.scatter(
-        uav_numbers[mask],
-        best_fitness_values[mask],
-        label=f"Data Rate {rate/10e5} mbit",
-        s=50
-    )
+    # Sort by UAV number for left-to-right order
+    sorted_indices = np.argsort(uav_numbers[mask])
+    sorted_uav = uav_numbers[mask][sorted_indices]
+    sorted_fitness = best_fitness_values[mask][sorted_indices]
+    # Scatter plot
+    ax1.scatter(sorted_uav, sorted_fitness, label=f"Data Rate {rate/10e5:.1f} Mbit", s=50)
+    # Line plot
+    ax1.plot(sorted_uav, sorted_fitness, linestyle='-', alpha=0.7)
 ax1.set_title("Fitness vs. UAV Number", fontsize=14)
 ax1.set_xlabel("UAV Number", fontsize=12)
 ax1.set_ylabel("Best Fitness", fontsize=12)
@@ -75,31 +76,21 @@ ax2 = fig.add_subplot(122)
 unique_uav_numbers = np.unique(uav_numbers)
 for uav in unique_uav_numbers:
     mask = uav_numbers == uav
-    ax2.scatter(
-        data_rates[mask],
-        best_fitness_values[mask],
-        label=f"UAV {uav}",
-        s=50
-    )
+    # Sort by Data Rate for left-to-right order
+    sorted_indices = np.argsort(data_rates[mask])
+    sorted_data_rates = data_rates[mask][sorted_indices]
+    sorted_fitness = best_fitness_values[mask][sorted_indices]
+    # Scatter plot
+    ax2.scatter(sorted_data_rates, sorted_fitness, label=f"UAV {uav}", s=50)
+    # Line plot
+    ax2.plot(sorted_data_rates, sorted_fitness, linestyle='-', alpha=0.7)
 ax2.set_title("Fitness vs. Data Rate", fontsize=14)
 ax2.set_xlabel("Data Rate (Mbit)", fontsize=12)
 ax2.set_ylabel("Best Fitness", fontsize=12)
 ax2.grid(True)
 ax2.legend(fontsize=8)
-"""
-# Subplot 3: Fitness vs. Data Rate and UAV Number (3D) - Differentiated by Data Rate and UAV Number
-ax3 = fig.add_subplot(133, projection='3d')
-scatter = ax3.scatter(data_rates, uav_numbers, best_fitness_values, c=best_fitness_values, cmap="viridis", s=100)
-ax3.set_title("Fitness vs. Data Rate and UAV Number", fontsize=14)
-ax3.set_xlabel("Data Rate (Mbit)", fontsize=12)
-ax3.set_ylabel("UAV Number", fontsize=12)
-ax3.set_zlabel("Best Fitness", fontsize=12)
 
-# Add a color bar for the 3D plot
-cbar = plt.colorbar(scatter, ax=ax3, pad=0.1)
-cbar.set_label("Best Fitness", fontsize=12)
-"""
 # Adjust layout and show the plots
 plt.tight_layout()
+plt.savefig("./output.svg")  # Save the figure
 plt.show()
-plt.savefig("./output.svg")
