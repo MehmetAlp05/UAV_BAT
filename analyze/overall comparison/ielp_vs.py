@@ -5,7 +5,7 @@ import numpy as np
 
 # File paths for the two algorithms
 output_file_algo1 = "bat_results/final_results.json"
-output_file_algo2 = "pso/final_results.json"
+output_file_algo2 = "IE-LP_results/final_results.json"
 
 # Function to read and parse JSON files
 def load_json(file_path):
@@ -67,12 +67,12 @@ custom_colors_uav_number = {
 
 # Define line styles for algorithms
 line_styles = {
-    "bat": "solid",
-    "pso": "dashed"
+    "Bat": "solid",
+    "IE-LP": "dashed"
 }
 markers = {
-    "bat": "o",  # Circle marker
-    "pso": "s"   # Square marker
+    "Bat": "o",  # Circle marker
+    "IE-LP": "s"   # Square marker
 }
 # Create a figure with subplots
 fig = plt.figure(figsize=(16, 8))
@@ -82,15 +82,15 @@ ax1 = fig.add_subplot(121)
 unique_data_rates = np.unique(np.concatenate([data_rates_algo1, data_rates_algo2]))
 for rate in unique_data_rates:
     for data_rates, uav_numbers, best_fitness_values, label in [
-        (data_rates_algo1, uav_numbers_algo1, best_fitness_values_algo1, "bat"),
-        (data_rates_algo2, uav_numbers_algo2, best_fitness_values_algo2, "pso"),
+        (data_rates_algo1, uav_numbers_algo1, best_fitness_values_algo1, "Bat"),
+        (data_rates_algo2, uav_numbers_algo2, best_fitness_values_algo2, "IE-LP"),
     ]:
         mask = data_rates == rate
         sorted_indices = np.argsort(uav_numbers[mask])
         sorted_uav = uav_numbers[mask][sorted_indices]
         sorted_fitness = best_fitness_values[mask][sorted_indices]
         color = custom_colors_data_rate.get(rate, "black")  # Default to black if rate is not in the dictionary
-        ax1.scatter(sorted_uav, sorted_fitness, label=f"{label} (Rate {rate/10e5:.1f} Mbit)", s=50, color=color,marker=markers[label])
+        ax1.scatter(sorted_uav, sorted_fitness, label=f"{label} ( {rate/10e5:.1f} Mbit)", s=50, color=color,marker=markers[label])
         ax1.plot(sorted_uav, sorted_fitness, linestyle=line_styles[label], alpha=0.7, color=color)
 
 ax1.set_title("Success Ratio vs. UAV Number", fontsize=28)
@@ -104,8 +104,8 @@ ax2 = fig.add_subplot(122)
 unique_uav_numbers = np.unique(np.concatenate([uav_numbers_algo1, uav_numbers_algo2]))
 for uav in unique_uav_numbers:
     for data_rates, uav_numbers, best_fitness_values, label in [
-        (data_rates_algo1, uav_numbers_algo1, best_fitness_values_algo1, "bat"),
-        (data_rates_algo2, uav_numbers_algo2, best_fitness_values_algo2, "pso"),
+        (data_rates_algo1, uav_numbers_algo1, best_fitness_values_algo1, "Bat"),
+        (data_rates_algo2, uav_numbers_algo2, best_fitness_values_algo2, "IE-LP"),
     ]:
         mask = uav_numbers == uav
         sorted_indices = np.argsort(data_rates[mask])
@@ -123,5 +123,5 @@ ax2.legend(fontsize=16)
 
 # Adjust layout and show the plots
 plt.tight_layout()
-plt.savefig("./bat-pso.png")  # Save the figure
+plt.savefig("./ielp_vs.png")  # Save the figure
 plt.show()

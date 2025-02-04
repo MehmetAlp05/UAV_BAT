@@ -1,0 +1,41 @@
+{
+    "runs": [
+      {
+        "threshold": 0.1,
+        "success_ratio": 1
+      },
+      {
+        "threshold": 0.2,
+        "success_ratio": 1
+      },
+      {
+        "threshold": 0.3,
+        "success_ratio": 1
+      },
+      {
+        "threshold": 0.4,
+        "success_ratio": 0.86
+      },
+      {
+        "threshold": 0.5,
+        "success_ratio": 0.775
+      },
+      {
+        "threshold": 0.6,
+        "success_ratio": 0.675
+      },
+      {
+        "threshold": 0.7,
+        "success_ratio": 0.61
+      },
+      {
+        "threshold": 0.8,
+        "success_ratio": 0.52
+      },
+      {
+        "threshold": 0.9,
+        "success_ratio": 0.41
+      }
+    ]
+  }
+  

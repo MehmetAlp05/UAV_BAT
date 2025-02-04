@@ -1,0 +1,128 @@
+[
+    {
+        "data_rate(mbit)": 6000000,
+        "simulation_runtime(seconds)": 400,
+        "road_length": 1000,
+        "best_position": [
+            0.3099493604100377
+        ],
+        "best_fitness": -0.9459,
+        "UAV_number": 1,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "timestamp": "2025-01-09T12:19:59.112070"
+    },
+    {
+        "data_rate(mbit)": 6000000,
+        "simulation_runtime(seconds)": 400,
+        "road_length": 1000,
+        "best_position": [
+            236.94091317646786,
+            825.4563854125615
+        ],
+        "best_fitness": -1.0,
+        "UAV_number": 2,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "timestamp": "2025-01-09T12:20:42.230246"
+    },
+    {
+        "data_rate(mbit)": 6000000,
+        "simulation_runtime(seconds)": 400,
+        "road_length": 1000,
+        "best_position": [
+            872.3416705216902,
+            183.53215488645597,
+            703.7240311027442
+        ],
+        "best_fitness": -1.0,
+        "UAV_number": 3,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "timestamp": "2025-01-09T12:20:47.488414"
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 400,
+        "road_length": 1000,
+        "best_position": [
+            999.0
+        ],
+        "best_fitness": -0.6875,
+        "UAV_number": 1,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "timestamp": "2025-01-09T12:21:05.128718"
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 400,
+        "road_length": 1000,
+        "best_position": [
+            0.0,
+            641.5863849350862
+        ],
+        "best_fitness": -0.9688,
+        "UAV_number": 2,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "timestamp": "2025-01-09T12:21:09.323003"
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 400,
+        "road_length": 1000,
+        "best_position": [
+            999.1199870742769,
+            999.1199870742769,
+            0.11998707427688958
+        ],
+        "best_fitness": -1.0,
+        "UAV_number": 3,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "timestamp": "2025-01-09T12:21:13.870568"
+    },
+    {
+        "data_rate(mbit)": 18000000,
+        "simulation_runtime(seconds)": 400,
+        "road_length": 1000,
+        "best_position": [
+            999.0
+        ],
+        "best_fitness": -0.4,
+        "UAV_number": 1,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "timestamp": "2025-01-09T12:21:33.381375"
+    },
+    {
+        "data_rate(mbit)": 18000000,
+        "simulation_runtime(seconds)": 400,
+        "road_length": 1000,
+        "best_position": [
+            33.87727868544251,
+            953.0719409793558
+        ],
+        "best_fitness": -0.5818,
+        "UAV_number": 2,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "timestamp": "2025-01-09T12:21:36.620070"
+    },
+    {
+        "data_rate(mbit)": 18000000,
+        "simulation_runtime(seconds)": 400,
+        "road_length": 1000,
+        "best_position": [
+            64.19911799406248,
+            999.0,
+            0.0
+        ],
+        "best_fitness": -0.7636,
+        "UAV_number": 3,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "timestamp": "2025-01-09T12:21:40.811738"
+    }
+]

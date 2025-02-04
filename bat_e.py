@@ -1,5 +1,4 @@
-import time
-start_time = time.time()
+#bat simulation with energy constraints
 import numpy as np
 import math
 import os
@@ -26,31 +25,54 @@ def UplinkDelay(instance,UAV_position,CAVs,allTask,UAV_direction):
         transferredDataSize=transferredDataSize+UplinkRate(CAVs[int(allTask[instance+D])].PositionVector[int(instance+D)],UAV_position+Parameters.UAVSpeed*UAV_direction);
         D=D+1;
     return D
+def Energy():
+    b_1 = Parameters.b_sigma/8*Parameters.b_p*Parameters.b_s*Parameters.b_A*(Parameters.b_omega**3)*(Parameters.b_R)**3;
+    b_2 = (1+Parameters.b_k)*(Parameters.b_W)**(3/2)/(math.sqrt(2*Parameters.b_p*Parameters.b_A));
+    E_f = ( b_1 * (1 + 3*Parameters.V_max**2/Parameters.U**2) + b_2 * (math.sqrt(1+Parameters.V_max**4/(4*Parameters.v_0**4)) - Parameters.V_max**2/(2*Parameters.v_0**2)) + 1/2*Parameters.c_0*Parameters.epsilon*Parameters.r*Parameters.A*Parameters.V_max**3 ) * Parameters.T
+    #print("Emax=",Parameters.E_max,"E_f=",E_f)
+    E_pm_t = (Parameters.k * Parameters.f**2)*Parameters.alpha*Parameters.C
+    #print("processing energy per second, ",E_pm_t*98)
+    left=(Parameters.E_max-E_f)/E_pm_t
+    #print("total processing energy after flying",left)
+    return E_pm_t,E_f,Parameters.E_max
+
 def simulation(startPosition,startDirection,CAVs,allTask):
+    E_pm_t,E_f,E_max=Energy()
+    battery=E_max-E_f
     UAV_position=startPosition
     UAV_direction=startDirection
-    queue=[]
+    queue=0
     tasks=[]
     finished=[]
     #print(Parameters.T)
     for instance in range(Parameters.T):
         #add taks
+        if battery<0:
+            break
         if allTask[instance]!=0:
-            delay=UplinkDelay(instance,UAV_position,CAVs,allTask,UAV_direction)
+            delay=UplinkDelay(queue+instance,UAV_position+Parameters.UAVSpeed*UAV_direction*queue,CAVs,allTask,UAV_direction)
             #print(delay)
             if delay<6:
+                queue+=delay
                 finished=np.append(finished,instance)
             tasks=np.append(tasks,allTask[instance])
         if UAV_position+Parameters.UAVSpeed*UAV_direction>1000 or UAV_position+Parameters.UAVSpeed*UAV_direction<0:
             UAV_direction*=-1
         UAV_position+=Parameters.UAVSpeed*UAV_direction
+        if queue>0:
+            queue-=1
+            battery-=E_pm_t
         #print("UAV_position@",instance,"is",UAV_position)
     #print("tasks",len(tasks))
     #print("finished",finished)
     #print("succces ratio is %",100*finished/len(tasks))
     return finished
-simulation(300,1,CAVs,allTask)
-print(np.count_nonzero(allTask))
+example_sim=simulation(0,1,CAVs,allTask)
+print(len(example_sim))
+#print(allTask)
+print("total task",np.count_nonzero(allTask))
+print(len(example_sim)/np.count_nonzero(allTask))
+
 def multiple_function(pos,CAVs,allTask):
     task_matrix=np.zeros((len(pos),np.count_nonzero(allTask)))
     #print(np.shape(task_matrix))
@@ -70,7 +92,7 @@ def sphere_function(x):
 
 # Parameters
 num_bats = 10
-dim = 5
+dim = 1
 num_iterations = 50
 freq_min = 0
 freq_max = 3
@@ -134,7 +156,7 @@ for iteration in range(num_iterations):
 
 print("\nOptimized Solution:", best_position)
 print("Best Fitness Value:", best_fitness)
-
+"""
 simulation_data={
     "data_rate(mbit)":Parameters.alpha,
     "simulation_runtime(seconds)":Parameters.T,
@@ -144,10 +166,7 @@ simulation_data={
     "UAV_number":dim,
     "iteration_number":num_iterations,
     "bat_number":num_bats,
-    "timestamp": datetime.now().isoformat(),  # Add a unique timestamp for tracking
-    "cpu_capacity":Parameters.C,
-    "transmission_power":Parameters.Pm,
-    "uav_altitude":Parameters.H
+    "timestamp": datetime.now().isoformat()  # Add a unique timestamp for tracking
 }
 # Directory to save the final result
 output_dir = "simulation_results"
@@ -178,4 +197,4 @@ with open(output_file, "w") as f:
     json.dump(existing_data, f, indent=4)
 
 print(f"New simulation results appended to {output_file}.")
-print("--- %s seconds ---" % (time.time() - start_time))
+"""

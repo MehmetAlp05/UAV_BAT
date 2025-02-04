@@ -16,7 +16,7 @@ def TaskGenerator(runtime,num_event):
     return task_arrival
 
 ### CAVS
-car_rate=.5
+car_rate=0.5
 sim_runtime=tau
 car_arrivals=np.random.poisson(car_rate,sim_runtime)
 print("car_arrivals\n",car_arrivals)

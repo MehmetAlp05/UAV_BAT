@@ -1,0 +1,128 @@
+[
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 2000,
+        "road_length": 2000,
+        "best_position": [
+            451.67225144400675
+        ],
+        "best_fitness": -0.6895306859205776,
+        "UAV_number": 1,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "timestamp": "2024-11-25T13:26:17.560892"
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 2000,
+        "road_length": 2000,
+        "best_position": [
+            291.73038887700835,
+            877.9476295903255
+        ],
+        "best_fitness": -0.8880866425992779,
+        "UAV_number": 2,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "timestamp": "2024-11-25T13:26:23.739000"
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 2000,
+        "road_length": 2000,
+        "best_position": [
+            330.9564594115919,
+            994.1078046959285,
+            46.5673550373893
+        ],
+        "best_fitness": -0.9422382671480144,
+        "UAV_number": 3,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "timestamp": "2024-11-25T13:26:30.328423"
+    },
+    {
+        "data_rate(mbit)": 6000000,
+        "simulation_runtime(seconds)": 2000,
+        "road_length": 2000,
+        "best_position": [
+            727.7636170255219
+        ],
+        "best_fitness": -0.8700361010830325,
+        "UAV_number": 1,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "timestamp": "2024-11-25T13:26:58.116034"
+    },
+    {
+        "data_rate(mbit)": 6000000,
+        "simulation_runtime(seconds)": 2000,
+        "road_length": 2000,
+        "best_position": [
+            0.13284279194543142,
+            999.1328427919454
+        ],
+        "best_fitness": -0.9963898916967509,
+        "UAV_number": 2,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "timestamp": "2024-11-25T13:27:02.695658"
+    },
+    {
+        "data_rate(mbit)": 6000000,
+        "simulation_runtime(seconds)": 2000,
+        "road_length": 2000,
+        "best_position": [
+            74.01482423005356,
+            923.5614228648732,
+            305.89351022164095
+        ],
+        "best_fitness": -0.9963898916967509,
+        "UAV_number": 3,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "timestamp": "2024-11-25T13:27:07.792972"
+    },
+    {
+        "data_rate(mbit)": 18000000,
+        "simulation_runtime(seconds)": 2000,
+        "road_length": 2000,
+        "best_position": [
+            988.3963330308661
+        ],
+        "best_fitness": -0.5848375451263538,
+        "UAV_number": 1,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "timestamp": "2024-11-25T13:27:31.289971"
+    },
+    {
+        "data_rate(mbit)": 18000000,
+        "simulation_runtime(seconds)": 2000,
+        "road_length": 2000,
+        "best_position": [
+            986.3427207756778,
+            270.8400723879651
+        ],
+        "best_fitness": -0.8303249097472925,
+        "UAV_number": 2,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "timestamp": "2024-11-25T13:27:36.635509"
+    },
+    {
+        "data_rate(mbit)": 18000000,
+        "simulation_runtime(seconds)": 2000,
+        "road_length": 2000,
+        "best_position": [
+            998.9427478963956,
+            -0.05725210360439877,
+            410.68032076472036
+        ],
+        "best_fitness": -0.9133574007220217,
+        "UAV_number": 3,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "timestamp": "2024-11-25T13:27:43.304874"
+    }
+]
