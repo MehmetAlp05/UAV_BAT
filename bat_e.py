@@ -25,6 +25,9 @@ def UplinkDelay(instance,UAV_position,CAVs,allTask,UAV_direction):
         transferredDataSize=transferredDataSize+UplinkRate(CAVs[int(allTask[instance+D])].PositionVector[int(instance+D)],UAV_position+Parameters.UAVSpeed*UAV_direction);
         D=D+1;
     return D
+
+def ProcessDelay():
+    return Parameters.alpha*Parameters.C/Parameters.f
 def Energy():
     b_1 = Parameters.b_sigma/8*Parameters.b_p*Parameters.b_s*Parameters.b_A*(Parameters.b_omega**3)*(Parameters.b_R)**3;
     b_2 = (1+Parameters.b_k)*(Parameters.b_W)**(3/2)/(math.sqrt(2*Parameters.b_p*Parameters.b_A));
@@ -50,7 +53,7 @@ def simulation(startPosition,startDirection,CAVs,allTask):
         if battery<0:
             break
         if allTask[instance]!=0:
-            delay=UplinkDelay(queue+instance,UAV_position+Parameters.UAVSpeed*UAV_direction*queue,CAVs,allTask,UAV_direction)
+            delay=UplinkDelay(queue+instance,UAV_position+Parameters.UAVSpeed*UAV_direction*queue,CAVs,allTask,UAV_direction)#+Parameters.alpha*Parameters.C/Parameters.f
             #print(delay)
             if delay<6:
                 queue+=delay

@@ -1,0 +1,2020 @@
+[
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 1000,
+        "best_position": [
+            516.7179428594976
+        ],
+        "best_fitness": -0.8556701030927835,
+        "UAV_number": 1,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 1000,
+        "best_position": [
+            0.0,
+            999.0
+        ],
+        "best_fitness": -0.9896907216494846,
+        "UAV_number": 2,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 1000,
+        "best_position": [
+            999.0,
+            0.0,
+            0.0
+        ],
+        "best_fitness": -0.9896907216494846,
+        "UAV_number": 3,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 1000,
+        "best_position": [
+            850.2650396892878
+        ],
+        "best_fitness": -0.845360824742268,
+        "UAV_number": 1,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 1000,
+        "best_position": [
+            659.3919235270906
+        ],
+        "best_fitness": -0.8762886597938144,
+        "UAV_number": 1,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 1000,
+        "best_position": [
+            0.0,
+            999.0
+        ],
+        "best_fitness": -0.9896907216494846,
+        "UAV_number": 2,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 1000,
+        "best_position": [
+            971.8208869948376,
+            0.0
+        ],
+        "best_fitness": -0.9896907216494846,
+        "UAV_number": 2,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 1000,
+        "best_position": [
+            0.0,
+            110.31516569123801,
+            999.0
+        ],
+        "best_fitness": -1.0,
+        "UAV_number": 3,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 1000,
+        "best_position": [
+            0.0,
+            999.0,
+            0.0
+        ],
+        "best_fitness": -0.9896907216494846,
+        "UAV_number": 3,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 1500,
+        "best_position": [
+            903.6152226535927,
+            1482.0837172582133,
+            78.03386456743058
+        ],
+        "best_fitness": -0.99,
+        "UAV_number": 3,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 1500,
+        "best_position": [
+            587.69519589617,
+            1499.0,
+            0.0
+        ],
+        "best_fitness": -0.96,
+        "UAV_number": 3,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 1500,
+        "best_position": [
+            1336.7381453686037,
+            1007.5217589123671,
+            219.05402290343116
+        ],
+        "best_fitness": -1.0,
+        "UAV_number": 3,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 1500,
+        "best_position": [
+            996.5779244712048,
+            183.5232232269467
+        ],
+        "best_fitness": -0.96,
+        "UAV_number": 2,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 1500,
+        "best_position": [
+            115.30995482872147,
+            983.1888098184805
+        ],
+        "best_fitness": -0.95,
+        "UAV_number": 2,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 1500,
+        "best_position": [
+            308.5548121661338,
+            1031.539302147705
+        ],
+        "best_fitness": -0.93,
+        "UAV_number": 2,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 1500,
+        "best_position": [
+            312.3308582340047
+        ],
+        "best_fitness": -0.77,
+        "UAV_number": 1,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 1500,
+        "best_position": [
+            397.10680103487147
+        ],
+        "best_fitness": -0.76,
+        "UAV_number": 1,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 1500,
+        "best_position": [
+            399.04757674153024
+        ],
+        "best_fitness": -0.76,
+        "UAV_number": 1,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 2000,
+        "best_position": [
+            85.58030757948043
+        ],
+        "best_fitness": -0.6875,
+        "UAV_number": 1,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 2000,
+        "best_position": [
+            423.7798710404173
+        ],
+        "best_fitness": -0.6770833333333334,
+        "UAV_number": 1,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 2000,
+        "best_position": [
+            123.57373920598869
+        ],
+        "best_fitness": -0.6666666666666666,
+        "UAV_number": 1,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 2000,
+        "best_position": [
+            186.71101699724068,
+            1233.979298577822
+        ],
+        "best_fitness": -0.8333333333333334,
+        "UAV_number": 2,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 2000,
+        "best_position": [
+            1404.2591137785794,
+            735.0193917952853
+        ],
+        "best_fitness": -0.8333333333333334,
+        "UAV_number": 2,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 2000,
+        "best_position": [
+            1003.3687054802547,
+            89.2728852549148
+        ],
+        "best_fitness": -0.875,
+        "UAV_number": 2,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 2000,
+        "best_position": [
+            43.20683867577243,
+            739.4827757528531,
+            1974.8277314734814
+        ],
+        "best_fitness": -0.9583333333333334,
+        "UAV_number": 3,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 2000,
+        "best_position": [
+            193.4994945004016,
+            998.6269677078419,
+            1236.5620089156353
+        ],
+        "best_fitness": -0.9583333333333334,
+        "UAV_number": 3,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 2000,
+        "best_position": [
+            603.4485773028276,
+            1517.840988094415,
+            946.7655108084925
+        ],
+        "best_fitness": -0.9166666666666666,
+        "UAV_number": 3,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 3000,
+        "best_position": [
+            0.2534567037571192
+        ],
+        "best_fitness": -0.5252525252525253,
+        "UAV_number": 1,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 3000,
+        "best_position": [
+            159.0649758081998
+        ],
+        "best_fitness": -0.4444444444444444,
+        "UAV_number": 1,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 3000,
+        "best_position": [
+            0.1279452924016562
+        ],
+        "best_fitness": -0.5252525252525253,
+        "UAV_number": 1,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 3000,
+        "best_position": [
+            2474.0727662201234,
+            0.0
+        ],
+        "best_fitness": -0.7575757575757576,
+        "UAV_number": 2,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 3000,
+        "best_position": [
+            511.58579146846586,
+            936.9522183140499
+        ],
+        "best_fitness": -0.6565656565656566,
+        "UAV_number": 2,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 3000,
+        "best_position": [
+            1570.297143765937,
+            0.054260462545969196
+        ],
+        "best_fitness": -0.6767676767676768,
+        "UAV_number": 2,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 3000,
+        "best_position": [
+            794.4500868409446,
+            12.316892617137938,
+            1073.4603666111118
+        ],
+        "best_fitness": -0.7878787878787878,
+        "UAV_number": 3,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 3000,
+        "best_position": [
+            2365.136283058373,
+            838.0683398616761,
+            320.9338148901662
+        ],
+        "best_fitness": -0.8282828282828283,
+        "UAV_number": 3,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 3000,
+        "best_position": [
+            928.0307127868585,
+            2356.00109696782,
+            1529.0559931414969
+        ],
+        "best_fitness": -0.8383838383838383,
+        "UAV_number": 3,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 500,
+        "best_position": [
+            133.08086223877012
+        ],
+        "best_fitness": -0.6224489795918368,
+        "UAV_number": 1,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 500,
+        "best_position": [
+            499.0
+        ],
+        "best_fitness": -0.6224489795918368,
+        "UAV_number": 1,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 500,
+        "best_position": [
+            123.61420752434879
+        ],
+        "best_fitness": -0.6224489795918368,
+        "UAV_number": 1,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 600,
+        "best_position": [
+            120.61806471591636
+        ],
+        "best_fitness": -0.7346938775510204,
+        "UAV_number": 1,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 600,
+        "best_position": [
+            105.77788353348735
+        ],
+        "best_fitness": -0.7244897959183674,
+        "UAV_number": 1,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 600,
+        "best_position": [
+            204.4298951866245
+        ],
+        "best_fitness": -0.7448979591836735,
+        "UAV_number": 1,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 600,
+        "best_position": [
+            544.7623188846866
+        ],
+        "best_fitness": -0.6759259259259259,
+        "UAV_number": 1,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 600,
+        "best_position": [
+            420.8273179422404
+        ],
+        "best_fitness": -0.6759259259259259,
+        "UAV_number": 1,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 600,
+        "best_position": [
+            530.9913966341162
+        ],
+        "best_fitness": -0.6851851851851852,
+        "UAV_number": 1,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 700,
+        "best_position": [
+            699.0
+        ],
+        "best_fitness": -0.7238095238095238,
+        "UAV_number": 1,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 700,
+        "best_position": [
+            652.9851436111753
+        ],
+        "best_fitness": -0.7047619047619048,
+        "UAV_number": 1,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 700,
+        "best_position": [
+            685.8640814215291
+        ],
+        "best_fitness": -0.7333333333333333,
+        "UAV_number": 1,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 700,
+        "best_position": [
+            667.190767155825
+        ],
+        "best_fitness": -0.8,
+        "UAV_number": 1,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 700,
+        "best_position": [
+            693.4795112121466
+        ],
+        "best_fitness": -0.8,
+        "UAV_number": 1,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 700,
+        "best_position": [
+            611.2121260759563
+        ],
+        "best_fitness": -0.7263157894736842,
+        "UAV_number": 1,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 800,
+        "best_position": [
+            704.2558048192459
+        ],
+        "best_fitness": -0.7840909090909091,
+        "UAV_number": 1,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 800,
+        "best_position": [
+            204.00786891251246
+        ],
+        "best_fitness": -0.7840909090909091,
+        "UAV_number": 1,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 800,
+        "best_position": [
+            685.9462466041151
+        ],
+        "best_fitness": -0.7954545454545454,
+        "UAV_number": 1,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 800,
+        "best_position": [
+            702.5382233892971
+        ],
+        "best_fitness": -0.8446601941747572,
+        "UAV_number": 1,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 800,
+        "best_position": [
+            740.8943946445946
+        ],
+        "best_fitness": -0.8252427184466019,
+        "UAV_number": 1,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 800,
+        "best_position": [
+            653.097409435603
+        ],
+        "best_fitness": -0.7766990291262136,
+        "UAV_number": 1,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 900,
+        "best_position": [
+            153.41840619877672
+        ],
+        "best_fitness": -0.88,
+        "UAV_number": 1,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 900,
+        "best_position": [
+            109.33503443815779
+        ],
+        "best_fitness": -0.8933333333333333,
+        "UAV_number": 1,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 900,
+        "best_position": [
+            114.28312845811061
+        ],
+        "best_fitness": -0.88,
+        "UAV_number": 1,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 900,
+        "best_position": [
+            403.9308903879049
+        ],
+        "best_fitness": -0.8631578947368421,
+        "UAV_number": 1,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 900,
+        "best_position": [
+            299.58079409908424
+        ],
+        "best_fitness": -0.8315789473684211,
+        "UAV_number": 1,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 900,
+        "best_position": [
+            336.76852651049586
+        ],
+        "best_fitness": -0.8631578947368421,
+        "UAV_number": 1,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 900,
+        "best_position": [
+            899.0,
+            0.0
+        ],
+        "best_fitness": -1.0,
+        "UAV_number": 2,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 900,
+        "best_position": [
+            899.0,
+            0.0
+        ],
+        "best_fitness": -1.0,
+        "UAV_number": 2,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 900,
+        "best_position": [
+            899.0,
+            0.0
+        ],
+        "best_fitness": -1.0,
+        "UAV_number": 2,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 900,
+        "best_position": [
+            880.0475831571046,
+            0.0
+        ],
+        "best_fitness": -1.0,
+        "UAV_number": 2,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 900,
+        "best_position": [
+            899.0,
+            0.0
+        ],
+        "best_fitness": -1.0,
+        "UAV_number": 2,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 900,
+        "best_position": [
+            899.0,
+            0.0
+        ],
+        "best_fitness": -1.0,
+        "UAV_number": 2,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 900,
+        "best_position": [
+            899.0,
+            0.0,
+            899.0
+        ],
+        "best_fitness": -1.0,
+        "UAV_number": 3,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 800,
+        "best_position": [
+            550.6226804663155,
+            0.0,
+            799.0
+        ],
+        "best_fitness": -0.9767441860465116,
+        "UAV_number": 3,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 800,
+        "best_position": [
+            165.55935487268374,
+            779.0709759246449,
+            6.762086843500436
+        ],
+        "best_fitness": -0.9767441860465116,
+        "UAV_number": 3,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 800,
+        "best_position": [
+            43.72132174221433,
+            556.7614006808686,
+            745.3480868248646
+        ],
+        "best_fitness": -0.9767441860465116,
+        "UAV_number": 3,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 800,
+        "best_position": [
+            799.0,
+            0.0,
+            0.0
+        ],
+        "best_fitness": -0.9705882352941176,
+        "UAV_number": 3,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 800,
+        "best_position": [
+            734.2376554625678,
+            664.8831924372723,
+            0.0
+        ],
+        "best_fitness": -0.9705882352941176,
+        "UAV_number": 3,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 800,
+        "best_position": [
+            765.4781668262488,
+            358.0958363462413,
+            29.055940624692518
+        ],
+        "best_fitness": -0.9705882352941176,
+        "UAV_number": 3,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 800,
+        "best_position": [
+            15.002820217248384,
+            771.9719994665649,
+            83.71535854644618
+        ],
+        "best_fitness": -0.9705882352941176,
+        "UAV_number": 3,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 800,
+        "best_position": [
+            75.6502690920818,
+            771.5463876580776
+        ],
+        "best_fitness": -0.9894736842105263,
+        "UAV_number": 2,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 800,
+        "best_position": [
+            0.0,
+            799.0
+        ],
+        "best_fitness": -0.9894736842105263,
+        "UAV_number": 2,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 800,
+        "best_position": [
+            799.0,
+            0.0
+        ],
+        "best_fitness": -0.9894736842105263,
+        "UAV_number": 2,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 800,
+        "best_position": [
+            0.0,
+            799.0
+        ],
+        "best_fitness": -0.9795918367346939,
+        "UAV_number": 2,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 800,
+        "best_position": [
+            0.0,
+            799.0
+        ],
+        "best_fitness": -0.9795918367346939,
+        "UAV_number": 2,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 800,
+        "best_position": [
+            0.0,
+            799.0
+        ],
+        "best_fitness": -0.9795918367346939,
+        "UAV_number": 2,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 700,
+        "best_position": [
+            0.0,
+            699.0
+        ],
+        "best_fitness": -0.9797979797979798,
+        "UAV_number": 2,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 700,
+        "best_position": [
+            0.0,
+            699.0
+        ],
+        "best_fitness": -0.9797979797979798,
+        "UAV_number": 2,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 700,
+        "best_position": [
+            0.0,
+            699.0
+        ],
+        "best_fitness": -0.9797979797979798,
+        "UAV_number": 2,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 700,
+        "best_position": [
+            699.0,
+            0.0,
+            0.0
+        ],
+        "best_fitness": -0.9797979797979798,
+        "UAV_number": 3,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 700,
+        "best_position": [
+            0.0,
+            699.0,
+            0.0
+        ],
+        "best_fitness": -0.9797979797979798,
+        "UAV_number": 3,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 700,
+        "best_position": [
+            0.0,
+            0.0,
+            699.0
+        ],
+        "best_fitness": -0.9797979797979798,
+        "UAV_number": 3,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 700,
+        "best_position": [
+            0.0,
+            601.4586230330408,
+            699.0
+        ],
+        "best_fitness": -0.9347826086956522,
+        "UAV_number": 3,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 700,
+        "best_position": [
+            699.0,
+            0.0,
+            699.0
+        ],
+        "best_fitness": -0.9347826086956522,
+        "UAV_number": 3,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 700,
+        "best_position": [
+            699.0,
+            699.0,
+            0.0
+        ],
+        "best_fitness": -0.9347826086956522,
+        "UAV_number": 3,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 700,
+        "best_position": [
+            0.0,
+            699.0
+        ],
+        "best_fitness": -0.9347826086956522,
+        "UAV_number": 2,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 700,
+        "best_position": [
+            0.0,
+            699.0
+        ],
+        "best_fitness": -0.9347826086956522,
+        "UAV_number": 2,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 700,
+        "best_position": [
+            699.0,
+            0.0
+        ],
+        "best_fitness": -0.9347826086956522,
+        "UAV_number": 2,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 600,
+        "best_position": [
+            599.0,
+            0.0
+        ],
+        "best_fitness": -0.8941176470588236,
+        "UAV_number": 2,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 600,
+        "best_position": [
+            599.0,
+            0.0
+        ],
+        "best_fitness": -0.8941176470588236,
+        "UAV_number": 2,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 600,
+        "best_position": [
+            495.72643866071246,
+            0.0
+        ],
+        "best_fitness": -0.8941176470588236,
+        "UAV_number": 2,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 600,
+        "best_position": [
+            294.1696846639712,
+            0.0,
+            599.0
+        ],
+        "best_fitness": -0.8941176470588236,
+        "UAV_number": 3,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 600,
+        "best_position": [
+            0.0,
+            599.0,
+            599.0
+        ],
+        "best_fitness": -0.8941176470588236,
+        "UAV_number": 3,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 600,
+        "best_position": [
+            599.0,
+            0.0,
+            599.0
+        ],
+        "best_fitness": -0.8941176470588236,
+        "UAV_number": 3,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 600,
+        "best_position": [
+            0.0,
+            599.0,
+            599.0
+        ],
+        "best_fitness": -0.9519230769230769,
+        "UAV_number": 3,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 600,
+        "best_position": [
+            0.0,
+            599.0,
+            599.0
+        ],
+        "best_fitness": -0.9519230769230769,
+        "UAV_number": 3,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 600,
+        "best_position": [
+            599.0,
+            0.0,
+            0.0
+        ],
+        "best_fitness": -0.9519230769230769,
+        "UAV_number": 3,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 600,
+        "best_position": [
+            0.0,
+            599.0
+        ],
+        "best_fitness": -0.9519230769230769,
+        "UAV_number": 2,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 600,
+        "best_position": [
+            599.0,
+            0.0
+        ],
+        "best_fitness": -0.9519230769230769,
+        "UAV_number": 2,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 600,
+        "best_position": [
+            599.0,
+            0.0
+        ],
+        "best_fitness": -0.9519230769230769,
+        "UAV_number": 2,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 600,
+        "best_position": [
+            599.0,
+            0.0
+        ],
+        "best_fitness": -0.908256880733945,
+        "UAV_number": 2,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 600,
+        "best_position": [
+            0.0,
+            599.0
+        ],
+        "best_fitness": -0.908256880733945,
+        "UAV_number": 2,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 600,
+        "best_position": [
+            599.0,
+            0.0
+        ],
+        "best_fitness": -0.908256880733945,
+        "UAV_number": 2,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 600,
+        "best_position": [
+            0.0,
+            0.0,
+            599.0
+        ],
+        "best_fitness": -0.908256880733945,
+        "UAV_number": 3,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 600,
+        "best_position": [
+            275.6954277261631,
+            599.0,
+            0.0
+        ],
+        "best_fitness": -0.908256880733945,
+        "UAV_number": 3,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 600,
+        "best_position": [
+            0.0,
+            599.0,
+            599.0
+        ],
+        "best_fitness": -0.908256880733945,
+        "UAV_number": 3,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 500,
+        "best_position": [
+            499.0,
+            0.0
+        ],
+        "best_fitness": -0.8058252427184466,
+        "UAV_number": 2,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 500,
+        "best_position": [
+            499.0,
+            0.0
+        ],
+        "best_fitness": -0.8058252427184466,
+        "UAV_number": 2,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 500,
+        "best_position": [
+            499.0,
+            0.0
+        ],
+        "best_fitness": -0.8058252427184466,
+        "UAV_number": 2,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 500,
+        "best_position": [
+            0.0,
+            499.0
+        ],
+        "best_fitness": -0.8058252427184466,
+        "UAV_number": 2,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 500,
+        "best_position": [
+            139.29622989601398,
+            0.0,
+            499.0
+        ],
+        "best_fitness": -0.8058252427184466,
+        "UAV_number": 3,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 500,
+        "best_position": [
+            0.0,
+            163.5482866987326,
+            499.0
+        ],
+        "best_fitness": -0.8058252427184466,
+        "UAV_number": 3,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 500,
+        "best_position": [
+            499.0,
+            0.0,
+            52.658194979287686
+        ],
+        "best_fitness": -0.8058252427184466,
+        "UAV_number": 3,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 500,
+        "best_position": [
+            0.0,
+            499.0
+        ],
+        "best_fitness": -0.845360824742268,
+        "UAV_number": 2,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 500,
+        "best_position": [
+            499.0,
+            0.0
+        ],
+        "best_fitness": -0.845360824742268,
+        "UAV_number": 2,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 500,
+        "best_position": [
+            0.0,
+            499.0
+        ],
+        "best_fitness": -0.845360824742268,
+        "UAV_number": 2,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 500,
+        "best_position": [
+            480.52197391358317,
+            492.6613044513721,
+            14.402037422137505
+        ],
+        "best_fitness": -0.845360824742268,
+        "UAV_number": 3,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 500,
+        "best_position": [
+            0.0,
+            499.0,
+            0.0
+        ],
+        "best_fitness": -0.845360824742268,
+        "UAV_number": 3,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "simulation_runtime(seconds)": 3600,
+        "road_length": 500,
+        "best_position": [
+            499.0,
+            499.0,
+            0.0
+        ],
+        "best_fitness": -0.845360824742268,
+        "UAV_number": 3,
+        "iteration_number": 50,
+        "bat_number": 10,
+        "cpu_capacity": 1000,
+        "transmission_power": 35,
+        "uav_altitude": 80
+    }
+]

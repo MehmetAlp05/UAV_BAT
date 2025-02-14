@@ -1,0 +1,62 @@
+[
+    {
+        "data_rate(mbit)": 20000000,
+        "simulation_runtime(seconds)": 7.116281032562256,
+        "road_length": 1000,
+        "best_position": [
+            557.6698912810417
+        ],
+        "best_fitness": -0.7541666666666668,
+        "UAV_number": 1,
+        "particle_number": 10,
+        "timestamp": 1738147246.854912
+    },
+    {
+        "data_rate(mbit)": 20000000,
+        "simulation_runtime(seconds)": 9.608120203018188,
+        "road_length": 2000,
+        "best_position": [
+            127.32249352922854
+        ],
+        "best_fitness": -0.5,
+        "UAV_number": 1,
+        "particle_number": 10,
+        "timestamp": 1738147276.092055
+    },
+    {
+        "data_rate(mbit)": 20000000,
+        "simulation_runtime(seconds)": 19.48226499557495,
+        "road_length": 3000,
+        "best_position": [
+            285.3946804949704
+        ],
+        "best_fitness": -0.325,
+        "UAV_number": 1,
+        "particle_number": 10,
+        "timestamp": 1738147332.094544
+    },
+    {
+        "data_rate(mbit)": 20000000,
+        "simulation_runtime(seconds)": 28.084886074066162,
+        "road_length": 4000,
+        "best_position": [
+            169.63010930065357
+        ],
+        "best_fitness": -0.3458333333333334,
+        "UAV_number": 1,
+        "particle_number": 10,
+        "timestamp": 1738147416.144812
+    },
+    {
+        "data_rate(mbit)": 20000000,
+        "simulation_runtime(seconds)": 56.6519570350647,
+        "road_length": 5000,
+        "best_position": [
+            510.2427442400697
+        ],
+        "best_fitness": -0.17916666666666667,
+        "UAV_number": 1,
+        "particle_number": 10,
+        "timestamp": 1738147589.6277661
+    }
+]

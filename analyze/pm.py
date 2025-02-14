@@ -51,7 +51,7 @@ algo_legend_handles = []  # To store algorithm legend handles
 # Plot data for each UAV number, distinguishing algorithms by line style
 for i, (uav_num, data) in enumerate(sorted(uav_data.items())):
     color = colors[i % len(colors)]
-    uav_label = f"UAV {uav_num}"
+    uav_label = f"{uav_num}"
     
     if i == 0:  # Create algorithm legend only once
         algo_legend_handles.append(ax.plot([], [], linestyle="-", color="black", label="BA")[0])
@@ -69,13 +69,13 @@ for i, (uav_num, data) in enumerate(sorted(uav_data.items())):
                     color=color)
 
 # Set titles and labels
-ax.set_title("Success Ratio vs. Transmission Power", fontsize=20)
+#ax.set_title("Success Ratio vs. Transmission Power", fontsize=20)
 ax.set_xlabel("Transmission Power (dBm)", fontsize=16)
-ax.set_ylabel("Success Ratio", fontsize=16)
+ax.set_ylabel("Success Probability", fontsize=16)
 ax.grid(True)
 
 # Add separate legends
-legend1 = ax.legend(handles=uav_legend_handles, title="UAV Number", loc="upper left", fontsize=12)
+legend1 = ax.legend(handles=uav_legend_handles, title="Number of UAVs", loc="upper left", fontsize=12)
 legend2 = ax.legend(handles=algo_legend_handles, title="Algorithm", loc="lower right", fontsize=12)
 
 ax.add_artist(legend1)  # Ensure both legends appear

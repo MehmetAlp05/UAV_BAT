@@ -7,7 +7,7 @@ from mpl_toolkits.mplot3d import Axes3D
 from scipy.interpolate import griddata
 
 # File path (update accordingly)
-output_file = "altitude/simulation_results_altitude.json"
+output_file = "altitude/altitude-bat.json"
 
 # Function to read and parse JSON files
 def load_json(file_path):
@@ -59,11 +59,11 @@ for i, (uav_number, data) in enumerate(uav_groups.items()):
     #cbar.set_label(f"Success Ratio (UAVs={uav_number})")
 
 # Labels
-ax.set_title("Success Ratio vs. Road Length & UAV Altitude", fontsize=16)
+#ax.set_title("Success Ratio vs. Road Length & UAV Altitude", fontsize=16)
 ax.set_xlabel("Road Length", fontsize=12)
 ax.set_ylabel("UAV Altitude", fontsize=12)
 ax.set_zlabel("Success Ratio", fontsize=12)
 
 # Show plot
-plt.savefig("./altitude_comparison.png")  # Save the figure
+plt.savefig("./altitude_comparison_bat.png")  # Save the figure
 plt.show()

@@ -4,9 +4,9 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # File paths for the three algorithms
-output_file_algo1 = "./bat_results/final_results.json"  # Algorithm 1
-output_file_algo2 = "./IE-LP_results/final_results.json"       # Algorithm 2
-output_file_algo3 = "./pso/final_results.json"  # Algorithm 3
+output_file_algo1 = "bat_results/final_results.json"  # Algorithm 1
+output_file_algo2 = "IE-LP_results/final_results.json"       # Algorithm 2
+output_file_algo3 = "pso/simulation_results_data_rate.json"  # Algorithm 3
 
 # Function to read and parse JSON files
 def load_json(file_path):

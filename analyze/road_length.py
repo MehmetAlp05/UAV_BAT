@@ -4,8 +4,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # File paths for both algorithms
-output_file_algo1 = "road_length/bat_final_results.json"  # Change this to your file path
-output_file_algo2 = "road_length/pso_final_results.json"  # Change this to your file path
+output_file_algo1 = "road_length/roadlength-bat.json"  
+output_file_algo2 = "road_length/simulation_results_road_length2.json"  
 
 # Function to read and parse JSON files
 def load_json(file_path):
@@ -16,13 +16,7 @@ def load_json(file_path):
             data = json.load(f)
         except json.JSONDecodeError:
             raise ValueError(f"The JSON file {file_path} contains invalid data.")
-    # Determine if the data is a list of runs or a dictionary with a "runs" key
-    if isinstance(data, dict) and "runs" in data:
-        return data["runs"]
-    elif isinstance(data, list):
-        return data
-    else:
-        raise ValueError(f"Unexpected JSON structure in {file_path}. Unable to parse runs.")
+    return data["runs"] if isinstance(data, dict) and "runs" in data else data
 
 # Load data for both algorithms
 runs_algo1 = load_json(output_file_algo1)
@@ -30,60 +24,71 @@ runs_algo2 = load_json(output_file_algo2)
 
 # Extract data for plotting
 def extract_data(runs):
-    road_lengths = []
-    best_fitness_values = []
+    road_lengths, best_fitness_values, uav_numbers = [], [], []
     for run in runs:
         road_length = run.get("road_length", None)
         best_fitness = run.get("best_fitness", None)
-        if road_length is not None and best_fitness is not None:
+        uav_number = run.get("UAV_number", None)
+        if road_length is not None and best_fitness is not None and uav_number is not None:
             road_lengths.append(road_length)
             best_fitness_values.append(-best_fitness)  # Multiply fitness by -1
-    return np.array(road_lengths), np.array(best_fitness_values)
+            uav_numbers.append(int(uav_number))  # Convert UAV number to int
+    return np.array(road_lengths), np.array(best_fitness_values), np.array(uav_numbers)
 
-road_lengths_algo1, best_fitness_values_algo1 = extract_data(runs_algo1)
-road_lengths_algo2, best_fitness_values_algo2 = extract_data(runs_algo2)
-
-# Debugging: Print the data to ensure it's loaded and structured correctly
-print("Algorithm 1 - Road Lengths:", road_lengths_algo1)
-print("Algorithm 1 - Best Fitness Values:", best_fitness_values_algo1)
-print("Algorithm 2 - Road Lengths:", road_lengths_algo2)
-print("Algorithm 2 - Best Fitness Values:", best_fitness_values_algo2)
+# Extract data for each algorithm
+road_lengths_algo1, best_fitness_values_algo1, uav_numbers_algo1 = extract_data(runs_algo1)
+road_lengths_algo2, best_fitness_values_algo2, uav_numbers_algo2 = extract_data(runs_algo2)
 
 # Ensure there is data to plot
 if len(road_lengths_algo1) == 0 or len(road_lengths_algo2) == 0:
     raise ValueError("No valid data found in the JSON files for plotting.")
 
-# Sort data by road lengths
-sorted_indices_algo1 = np.argsort(road_lengths_algo1)
-sorted_indices_algo2 = np.argsort(road_lengths_algo2)
+# Define colors and styles for UAV numbers
+uav_colors = {1: "blue", 2: "red", 3: "green", 4: "purple", 5: "orange"}  # Extend if needed
+line_styles = {"BA": "solid", "PSO": "dashed"}
+markers = {"BA": "o", "PSO": "s"}
 
-road_lengths_algo1 = road_lengths_algo1[sorted_indices_algo1]
-best_fitness_values_algo1 = best_fitness_values_algo1[sorted_indices_algo1]
+fig, ax = plt.subplots(figsize=(10, 6))
 
-road_lengths_algo2 = road_lengths_algo2[sorted_indices_algo2]
-best_fitness_values_algo2 = best_fitness_values_algo2[sorted_indices_algo2]
+# Unique UAV numbers
+unique_uav_numbers = np.unique(np.concatenate([uav_numbers_algo1, uav_numbers_algo2]))
 
-# Create a figure
-fig = plt.figure(figsize=(10, 6))
-ax = fig.add_subplot(111)
+# Plot each UAV group separately for both algorithms
+for uav in unique_uav_numbers:
+    color = uav_colors.get(uav, "black")  # Default to black if UAV not in dict
 
-# Define colors and styles
-colors = ["blue", "red"]
-line_styles = ["solid", "solid"]
-labels = ["BA", "PSO"]
+    # Filter and sort data for BA (Bat Algorithm)
+    mask1 = uav_numbers_algo1 == uav
+    sorted_indices1 = np.argsort(road_lengths_algo1[mask1])
+    sorted_road_lengths1 = road_lengths_algo1[mask1][sorted_indices1]
+    sorted_fitness1 = best_fitness_values_algo1[mask1][sorted_indices1]
 
-# Plot both algorithms
-ax.plot(road_lengths_algo1, best_fitness_values_algo1, linestyle=line_styles[0], alpha=0.7, color=colors[0], label=labels[0])
-ax.plot(road_lengths_algo2, best_fitness_values_algo2, linestyle=line_styles[1], alpha=0.7, color=colors[1], label=labels[1])
+    # Filter and sort data for PSO (Particle Swarm Optimization)
+    mask2 = uav_numbers_algo2 == uav
+    sorted_indices2 = np.argsort(road_lengths_algo2[mask2])
+    sorted_road_lengths2 = road_lengths_algo2[mask2][sorted_indices2]
+    sorted_fitness2 = best_fitness_values_algo2[mask2][sorted_indices2]
 
-# Set titles and labels
-ax.set_title("Success Ratio vs. Road Length", fontsize=24)
+    if len(sorted_road_lengths1) > 0:
+        ax.plot(sorted_road_lengths1, sorted_fitness1, linestyle=line_styles["BA"], color=color, marker=markers["BA"], label=f"BA - UAV {uav}")
+    if len(sorted_road_lengths2) > 0:
+        ax.plot(sorted_road_lengths2, sorted_fitness2, linestyle=line_styles["PSO"], color=color, marker=markers["PSO"], label=f"PSO - UAV {uav}")
+
+# Set labels and title
 ax.set_xlabel("Road Length", fontsize=18)
-ax.set_ylabel("Success Ratio", fontsize=18)
+ax.set_ylabel("Success Probability", fontsize=18)
 ax.grid(True)
-ax.legend(fontsize=12)
 
-# Adjust layout and show the plot
+# Create separate legends for UAV colors and Algorithm markers
+legend_uav = [plt.Line2D([0], [0], color=color, linestyle="-", label=f"UAV {uav}") for uav, color in uav_colors.items()]
+legend_algo = [plt.Line2D([0], [0], color="black", linestyle=line_styles[algo], marker=markers[algo], label=algo) for algo in line_styles]
+
+legend1 = ax.legend(handles=legend_uav, title="UAV Numbers", loc="upper right", fontsize=12)
+ax.add_artist(legend1)  # Add UAV legend manually
+
+legend2 = ax.legend(handles=legend_algo, title="Algorithms", loc="lower right", fontsize=12)
+
+# Adjust layout and save the plot
 plt.tight_layout()
-plt.savefig("./road-length-comparison.png")  # Save the figure
+plt.savefig("road-length-comparison.png")
 plt.show()

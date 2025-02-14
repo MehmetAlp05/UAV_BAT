@@ -56,11 +56,11 @@ bar_width = 0.05  # Set a fixed bar width
 ax.bar(thresholds, success_ratios, width=bar_width, color="blue", alpha=0.7, label="Success Ratio")
 
 # Set titles and labels
-ax.set_title("Success Ratio vs. Threshold", fontsize=24)
+#ax.set_title("Success Ratio vs. Threshold", fontsize=24)
 ax.set_xlabel("Threshold", fontsize=18)
-ax.set_ylabel("Success Ratio", fontsize=18)
+ax.set_ylabel("Success Probability", fontsize=18)
 ax.grid(axis="y", linestyle="--", alpha=0.7)
-ax.legend(fontsize=12)
+#ax.legend(fontsize=12)
 
 # Adjust layout and show the plot
 plt.xticks(thresholds)  # Ensure all threshold values are labeled on x-axis

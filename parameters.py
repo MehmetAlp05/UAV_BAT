@@ -1,17 +1,17 @@
 class Parameters:
     # Parameters
-    alpha=24*10**6;#bits
+    alpha=12*10**6;#bits
     T=3600;#seconds
     sigma=1;#Time slot (in seconds)
     C=1000;#cycle per bit
     f=2*10**9;#ycle per second
     G0=-50;#dB
-    H=100;#meters
+    H=80;#meters
     N0=-130;#dBm/Hz
     B=20*10**6;#Hz
     Pm=35;#dBm
     Qm=6;#seconds
-    RoadLength=5000;
+    RoadLength=1000;
     V_max = 20; # m/sec;
     U = 120; # m/sec
     v_0 = 4.03;#Mean rotor induced velocity in hover
@@ -30,5 +30,4 @@ class Parameters:
     b_A = 0.503;
     b_omega = 300;
     b_R = 0.4;
-    E_max=68*(10**3);#joule
-
+    E_max=680*(10**3);#joule

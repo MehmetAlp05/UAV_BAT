@@ -70,7 +70,7 @@ def sphere_function(x):
 
 # Parameters
 num_bats = 10
-dim = 5
+dim = 1
 num_iterations = 50
 freq_min = 0
 freq_max = 3
@@ -144,7 +144,7 @@ simulation_data={
     "UAV_number":dim,
     "iteration_number":num_iterations,
     "bat_number":num_bats,
-    "timestamp": datetime.now().isoformat(),  # Add a unique timestamp for tracking
+    #"timestamp": datetime.now().isoformat(),  # Add a unique timestamp for tracking
     "cpu_capacity":Parameters.C,
     "transmission_power":Parameters.Pm,
     "uav_altitude":Parameters.H
