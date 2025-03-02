@@ -1,6 +1,6 @@
 class Parameters:
     # Parameters
-    alpha=12*10**6;#bits
+    alpha=15*10**6;#bits
     T=3600;#seconds
     sigma=1;#Time slot (in seconds)
     C=1000;#cycle per bit
@@ -9,7 +9,7 @@ class Parameters:
     H=80;#meters
     N0=-130;#dBm/Hz
     B=20*10**6;#Hz
-    Pm=35;#dBm
+    Pm=29;#dBm
     Qm=6;#seconds
     RoadLength=1000;
     V_max = 20; # m/sec;

@@ -5,7 +5,7 @@ import numpy as np
 
 # File paths for both algorithms
 output_file_algo1 = "road_length/roadlength-bat.json"  
-output_file_algo2 = "road_length/simulation_results_road_length2.json"  
+output_file_algo2 = "road_length/simulation_results_road_length_UPD6.json"  
 
 # Function to read and parse JSON files
 def load_json(file_path):
@@ -44,14 +44,14 @@ if len(road_lengths_algo1) == 0 or len(road_lengths_algo2) == 0:
     raise ValueError("No valid data found in the JSON files for plotting.")
 
 # Define colors and styles for UAV numbers
-uav_colors = {1: "blue", 2: "red", 3: "green", 4: "purple", 5: "orange"}  # Extend if needed
+uav_colors = {1: "blue", 2: "red", 3: "green"}  # Only 1, 2, 3 included
 line_styles = {"BA": "solid", "PSO": "dashed"}
 markers = {"BA": "o", "PSO": "s"}
 
 fig, ax = plt.subplots(figsize=(10, 6))
 
-# Unique UAV numbers
-unique_uav_numbers = np.unique(np.concatenate([uav_numbers_algo1, uav_numbers_algo2]))
+# Unique UAV numbers (only 1, 2, 3)
+unique_uav_numbers = [uav for uav in np.unique(np.concatenate([uav_numbers_algo1, uav_numbers_algo2])) if uav in uav_colors]
 
 # Plot each UAV group separately for both algorithms
 for uav in unique_uav_numbers:
@@ -80,10 +80,10 @@ ax.set_ylabel("Success Probability", fontsize=18)
 ax.grid(True)
 
 # Create separate legends for UAV colors and Algorithm markers
-legend_uav = [plt.Line2D([0], [0], color=color, linestyle="-", label=f"UAV {uav}") for uav, color in uav_colors.items()]
+legend_uav = [plt.Line2D([0], [0], color=color, linestyle="-", label=f" {uav}") for uav, color in uav_colors.items()]
 legend_algo = [plt.Line2D([0], [0], color="black", linestyle=line_styles[algo], marker=markers[algo], label=algo) for algo in line_styles]
 
-legend1 = ax.legend(handles=legend_uav, title="UAV Numbers", loc="upper right", fontsize=12)
+legend1 = ax.legend(handles=legend_uav, title="Number of UAVs", loc="upper right", fontsize=12)
 ax.add_artist(legend1)  # Add UAV legend manually
 
 legend2 = ax.legend(handles=legend_algo, title="Algorithms", loc="lower right", fontsize=12)

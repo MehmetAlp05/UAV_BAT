@@ -1,0 +1,92 @@
+[
+    {
+        "data_rate(mbit)": 6000000,
+        "road_length": 1000,
+        "best_position": [
+            604.097487992423
+        ],
+        "best_fitness": -0.951219512195122,
+        "UAV_number": 1
+    },
+    {
+        "data_rate(mbit)": 6000000,
+        "road_length": 1000,
+        "best_position": [
+            211.29568305477508,
+            773.0300065372691
+        ],
+        "best_fitness": -1.0,
+        "UAV_number": 2
+    },
+    {
+        "data_rate(mbit)": 6000000,
+        "road_length": 1000,
+        "best_position": [
+            543.5331522859574,
+            563.7663247334691,
+            370.679853010924
+        ],
+        "best_fitness": -1.0,
+        "UAV_number": 3
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "road_length": 1000,
+        "best_position": [
+            627.8009533112765
+        ],
+        "best_fitness": -0.7682926829268293,
+        "UAV_number": 1
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "road_length": 1000,
+        "best_position": [
+            454.48680933850414,
+            676.6825910160545
+        ],
+        "best_fitness": -0.9552845528455286,
+        "UAV_number": 2
+    },
+    {
+        "data_rate(mbit)": 12000000,
+        "road_length": 1000,
+        "best_position": [
+            502.5882813325011,
+            472.0761636876169,
+            399.7328702724824
+        ],
+        "best_fitness": -1.0,
+        "UAV_number": 3
+    },
+    {
+        "data_rate(mbit)": 18000000,
+        "road_length": 1000,
+        "best_position": [
+            329.5392699622498
+        ],
+        "best_fitness": -0.6585365853658537,
+        "UAV_number": 1
+    },
+    {
+        "data_rate(mbit)": 18000000,
+        "road_length": 1000,
+        "best_position": [
+            417.733813941739,
+            659.9781002865067
+        ],
+        "best_fitness": -0.8699186991869919,
+        "UAV_number": 2
+    },
+    {
+        "data_rate(mbit)": 18000000,
+        "road_length": 1000,
+        "best_position": [
+            116.01435731430506,
+            715.6769299181733,
+            576.0662947630241
+        ],
+        "best_fitness": -0.9146341463414633,
+        "UAV_number": 3
+    }
+]

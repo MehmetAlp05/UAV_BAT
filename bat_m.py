@@ -70,7 +70,7 @@ def sphere_function(x):
 
 # Parameters
 num_bats = 10
-dim = 1
+dim = 4
 num_iterations = 50
 freq_min = 0
 freq_max = 3

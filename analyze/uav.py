@@ -6,7 +6,7 @@ import numpy as np
 # File paths for the three algorithms
 output_file_algo1 = "datarate/datarate-bat.json"
 output_file_algo2 = "overall/IE-LP_results/final_results.json"
-output_file_algo3 = "datarate/datarate-bat.json"
+output_file_algo3 = "datarate/simulation_results_data_rate_6.json"
 
 def load_json(file_path):
     if not os.path.exists(file_path):
@@ -48,7 +48,7 @@ fig, ax = plt.subplots(figsize=(8, 6))
 
 unique_uav_numbers = np.unique(np.concatenate([uav_numbers_algo1, uav_numbers_algo2, uav_numbers_algo3]))
 legend_lines = []  # Stores line legend handles
-legend_markers = []  # Stores marker legend handles
+legend_markers = []  # Stores marker + line legend handles
 
 for uav in unique_uav_numbers:
     color = custom_colors_uav_number.get(uav, "black")
@@ -61,9 +61,12 @@ for data_rates, uav_numbers, best_fitness_values, label in [
     (data_rates_algo3, uav_numbers_algo3, best_fitness_values_algo3, "PSO"),
 ]:
     marker = markers[label]
-    dummy_marker = ax.scatter([], [], label=label, color="black", marker=marker)  # Empty scatter for legend
-    legend_markers.append(dummy_marker)
-
+    linestyle = line_styles[label]
+    
+    # Create a dummy line with the corresponding linestyle and marker for legend
+    dummy_line, = ax.plot([], [], linestyle=linestyle, color="black", marker=marker, label=label)
+    legend_markers.append(dummy_line)
+    
     for uav in unique_uav_numbers:
         mask = uav_numbers == uav
         sorted_indices = np.argsort(data_rates[mask])
@@ -72,9 +75,8 @@ for data_rates, uav_numbers, best_fitness_values, label in [
         color = custom_colors_uav_number.get(uav, "black")
         
         ax.scatter(sorted_data_rates, sorted_fitness, s=50, color=color, marker=marker)
-        ax.plot(sorted_data_rates, sorted_fitness, linestyle=line_styles[label], alpha=0.7, color=color)
+        ax.plot(sorted_data_rates, sorted_fitness, linestyle=linestyle, alpha=0.7, color=color)
 
-#ax.set_title("Success Ratio vs. Data Rate", fontsize=20)
 ax.set_xlabel("Data Rate (Mbit)", fontsize=16)
 ax.set_ylabel("Success Probability", fontsize=16)
 ax.grid(True)
