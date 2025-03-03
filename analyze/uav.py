@@ -4,9 +4,9 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # File paths for the three algorithms
-output_file_algo1 = "datarate/datarate-bat.json"
-output_file_algo2 = "overall/IE-LP_results/final_results.json"
-output_file_algo3 = "datarate/simulation_results_data_rate_6.json"
+output_file_algo1 = "analyze/datarate/datarate-bat.json"
+output_file_algo2 = "analyze/overall/IE-LP_results/final_results.json"
+output_file_algo3 = "analyze/datarate/simulation_results_data_rate_6.json"
 
 def load_json(file_path):
     if not os.path.exists(file_path):
@@ -88,5 +88,5 @@ ax.add_artist(legend1)  # Add the first legend manually
 legend2 = ax.legend(handles=legend_markers, title="Algorithm", loc="lower right", fontsize=12)
 
 plt.tight_layout()
-plt.savefig("success_ratio_vs_data_rate.png")
+plt.savefig("analyze/datarate/success_ratio_vs_data_rate.png")
 plt.show()

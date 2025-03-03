@@ -1,85 +1,72 @@
-import os
 import json
 import matplotlib.pyplot as plt
-import numpy as np
 
-# File paths (Update these to your actual file locations)
-output_file_algo1 = "cpu/cpu-bat.json"  # First algorithm
-output_file_algo2 = "cpu/simulation_results_cpu.json"  # Second algorithm
+# Load data from two JSON files
+file1 = "analyze/cpu/cpu-bat.json"  # BA algorithm
+file2 = "analyze/cpu/cpu-pso.json"  # PSO algorithm
 
-# Function to read and parse JSON files
-def load_json(file_path):
-    if not os.path.exists(file_path):
-        raise FileNotFoundError(f"The file {file_path} does not exist.")
-    with open(file_path, "r") as f:
-        try:
-            data = json.load(f)
-        except json.JSONDecodeError:
-            raise ValueError(f"The JSON file {file_path} contains invalid data.")
-    return data if isinstance(data, list) else [data]
+with open(file1, "r") as f:
+    data1 = json.load(f)
 
-# Load data
-runs_algo1 = load_json(output_file_algo1)
-runs_algo2 = load_json(output_file_algo2)
+with open(file2, "r") as f:
+    data2 = json.load(f)
 
-# Combine both datasets
-all_runs = [(run, "algo1") for run in runs_algo1] + [(run, "algo2") for run in runs_algo2]
+# Function to process data
+def process_data(data):
+    uav_data = {}
+    for entry in data:
+        uav_number = entry["UAV_number"]
+        if uav_number not in uav_data:
+            uav_data[uav_number] = {"computing_power": [], "best_fitness": []}
+        uav_data[uav_number]["computing_power"].append(entry["computing_power"])
+        uav_data[uav_number]["best_fitness"].append(-entry["best_fitness"])  # Reverse magnitude
+    return uav_data
 
-# Extract data grouped by UAV number and algorithm
-uav_data = {}
-for run, algo in all_runs:
-    uav_num = run["UAV_number"]
-    cpu_capacity = run["cpu_capacity"]
-    success_ratio = -run["best_fitness"]  # Negate fitness to get success ratio
-    
-    if uav_num not in uav_data:
-        uav_data[uav_num] = {"algo1": {"cpu_capacity": [], "success_ratio": []}, 
-                             "algo2": {"cpu_capacity": [], "success_ratio": []}}
-    
-    uav_data[uav_num][algo]["cpu_capacity"].append(cpu_capacity)
-    uav_data[uav_num][algo]["success_ratio"].append(success_ratio)
+# Process both datasets
+uav_data1 = process_data(data1)  # BA
+uav_data2 = process_data(data2)  # PSO
 
-# Create a figure
-fig, ax = plt.subplots(figsize=(10, 6))
+# Plot settings
+plt.figure(figsize=(10, 5))
 
-# Define colors for different UAV numbers
-colors = ["blue", "red", "green", "orange", "purple"]
-uav_legend_handles = []  # To store UAV legend handles
-algo_legend_handles = []  # To store algorithm legend handles
+# Colors and markers for distinction
+colors = ["b", "r", "g", "m", "c", "y", "k"]
+markers = ["o", "s"]  # Circle for BA, Square for PSO
+linestyles = ["-", "--"]  # Solid for BA, Dashed for PSO
 
-# Plot data for each UAV number, distinguishing algorithms by line style
-for i, (uav_num, data) in enumerate(sorted(uav_data.items())):
-    color = colors[i % len(colors)]
-    uav_label = f"{uav_num}"
-    
-    if i == 0:  # Create algorithm legend only once
-        algo_legend_handles.append(ax.plot([], [], linestyle="-", color="black", label="BA")[0])
-        algo_legend_handles.append(ax.plot([], [], linestyle="--", color="black", label="PSO")[0])
+# Plot data
+uav_numbers_legend = set()
+for i, uav_number in enumerate(sorted(set(uav_data1.keys()).union(set(uav_data2.keys())))):
+    if uav_number in uav_data1:
+        plt.plot(
+            uav_data1[uav_number]["computing_power"], uav_data1[uav_number]["best_fitness"], 
+            marker=markers[0], linestyle=linestyles[0], color=colors[i % len(colors)],
+            label=f"{uav_number}" if uav_number not in uav_numbers_legend else "_nolegend_"
+        )
+        uav_numbers_legend.add(uav_number)
+    if uav_number in uav_data2:
+        plt.plot(
+            uav_data2[uav_number]["computing_power"], uav_data2[uav_number]["best_fitness"], 
+            marker=markers[1], linestyle=linestyles[1], color=colors[i % len(colors)],
+            label="_nolegend_"
+        )
 
-    uav_legend_handles.append(ax.plot([], [], color=color, label=uav_label)[0])  # UAV color legend
-    
-    for algo, linestyle in [("algo1", "-"), ("algo2", "--")]:  # Solid for algo1, dashed for algo2
-        if len(data[algo]["cpu_capacity"]) > 0:  # Check if there's data for this UAV & algorithm
-            sorted_indices = np.argsort(data[algo]["cpu_capacity"])
-            cpu_capacity_sorted = np.array(data[algo]["cpu_capacity"])[sorted_indices]
-            success_ratio_sorted = np.array(data[algo]["success_ratio"])[sorted_indices]
-            
-            ax.plot(cpu_capacity_sorted, success_ratio_sorted, marker="o", linestyle=linestyle, 
-                    color=color)
+# Labels and grid
+plt.xlabel("Computing Power")
+plt.ylabel("Success Probability")
+plt.xscale("log")  # Log scale for better visualization
+plt.grid(True, which="both", linestyle="--", linewidth=0.7, alpha=0.7)
 
-# Set titles and labels
-#ax.set_title("Success Ratio vs. CPU Capacity", fontsize=20)
-ax.set_xlabel("CPU Capacity", fontsize=16)
-ax.set_ylabel("Success Probability", fontsize=16)
-ax.grid(True)
+# Separate legends for UAV number and Algorithm (both in upper left)
+legend1 = plt.legend(title="Number of UAVs", loc="upper left")
+legend2 = plt.legend(handles=[
+    plt.Line2D([0], [0], marker=markers[0], linestyle=linestyles[0], color="black", label="BA"),
+    plt.Line2D([0], [0], marker=markers[1], linestyle=linestyles[1], color="black", label="PSO")
+], title="Algorithm", loc="upper left", bbox_to_anchor=(0, 0.75))  # Positioned slightly below UAV legend
+plt.gca().add_artist(legend1)
 
-# Add separate legends
-legend1 = ax.legend(handles=uav_legend_handles, title="Number of UAVs", loc="upper left", fontsize=12)
-legend2 = ax.legend(handles=algo_legend_handles, title="Algorithm", loc="lower right", fontsize=12)
+# Save figure
+plt.savefig("analyze/cpu/computing_power.png", dpi=300, bbox_inches="tight")
 
-ax.add_artist(legend1)  # Ensure both legends appear
-
-# Adjust layout and show the plot
-plt.tight_layout()
-plt.savefig("./cpu_capacity_comparison.png")  # Save the figure
+# Show plot
 plt.show()

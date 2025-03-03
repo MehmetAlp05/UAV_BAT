@@ -1,16 +1,16 @@
 class Parameters:
     # Parameters
-    alpha=15*10**6;#bits
+    alpha=24*10**6;#bits
     T=3600;#seconds
     sigma=1;#Time slot (in seconds)
     C=1000;#cycle per bit
-    f=2*10**9;#ycle per second
+    f=(40/1)*10**9;#ycle per second
     G0=-50;#dB
     H=80;#meters
     N0=-130;#dBm/Hz
     B=20*10**6;#Hz
-    Pm=29;#dBm
-    Qm=6;#seconds
+    Pm=35-0;#dBm
+    Qm=9;#seconds
     RoadLength=1000;
     V_max = 20; # m/sec;
     U = 120; # m/sec

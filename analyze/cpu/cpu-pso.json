@@ -1,0 +1,233 @@
+[
+     {
+        "data_rate(mbit)": 24000000,
+        "computing_power": 2000000000,
+        "road_length": 2000,
+        "best_position": [
+            713.1036247934943
+        ],
+        "best_fitness": -0.0,
+        "UAV_number": 1
+    },
+    {
+        "data_rate(mbit)": 24000000,
+        "computing_power": 2000000000,
+        "road_length": 2000,
+        "best_position": [
+            701.5773255401359,
+            1643.2144619268681
+        ],
+        "best_fitness": -0.0,
+        "UAV_number": 2
+    },
+    {
+        "data_rate(mbit)": 24000000,
+        "computing_power": 2000000000,
+        "road_length": 2000,
+        "best_position": [
+            1528.9647289811342,
+            1029.1574497761205,
+            1578.365492025057
+        ],
+        "best_fitness": -0.0,
+        "UAV_number": 3
+    },
+    {
+        "data_rate(mbit)": 24000000,
+        "computing_power": 4000000000,
+        "road_length": 2000,
+        "best_position": [
+            631.3480301197196
+        ],
+        "best_fitness": -0.265625,
+        "UAV_number": 1
+    },
+    {
+        "data_rate(mbit)": 24000000,
+        "computing_power": 4000000000,
+        "road_length": 2000,
+        "best_position": [
+            91.75347154028934,
+            926.7351009752023
+        ],
+        "best_fitness": -0.0,
+        "UAV_number": 2
+    },
+    {
+        "data_rate(mbit)": 24000000,
+        "computing_power": 4000000000,
+        "road_length": 2000,
+        "best_position": [
+            1626.1592611936328,
+            1267.0693099081618,
+            1573.8620872935053
+        ],
+        "best_fitness": -0.0,
+        "UAV_number": 3
+    },
+    {
+        "data_rate(mbit)": 24000000,
+        "computing_power": 8000000000,
+        "road_length": 2000,
+        "best_position": [
+            432.7799571623319
+        ],
+        "best_fitness": -0.38541666666666663,
+        "UAV_number": 1
+    },
+    {
+        "data_rate(mbit)": 24000000,
+        "computing_power": 8000000000,
+        "road_length": 2000,
+        "best_position": [
+            645.9379789508369,
+            573.0012925631803
+        ],
+        "best_fitness": -0.35416666666666674,
+        "UAV_number": 2
+    },
+    {
+        "data_rate(mbit)": 24000000,
+        "computing_power": 8000000000,
+        "road_length": 2000,
+        "best_position": [
+            393.3567600162273,
+            1076.0953757896561,
+            1558.3230442796003
+        ],
+        "best_fitness": -0.0,
+        "UAV_number": 3
+    },
+    {
+        "data_rate(mbit)": 24000000,
+        "computing_power": 20000000000,
+        "road_length": 2000,
+        "best_position": [
+            1070.4605160146973
+        ],
+        "best_fitness": -0.234375,
+        "UAV_number": 1
+    },
+    {
+        "data_rate(mbit)": 24000000,
+        "computing_power": 20000000000,
+        "road_length": 2000,
+        "best_position": [
+            515.364324555689,
+            544.5648050366788
+        ],
+        "best_fitness": -0.49479166666666674,
+        "UAV_number": 2
+    },
+    {
+        "data_rate(mbit)": 24000000,
+        "computing_power": 20000000000,
+        "road_length": 2000,
+        "best_position": [
+            948.507806042745,
+            613.2675969005571,
+            1749.5112099182525
+        ],
+        "best_fitness": -0.5026041666666667,
+        "UAV_number": 3
+    },
+    {
+        "data_rate(mbit)": 24000000,
+        "computing_power": 40000000000,
+        "road_length": 2000,
+        "best_position": [
+            1516.843286446812
+        ],
+        "best_fitness": -0.078125,
+        "UAV_number": 1
+    },
+    {
+        "data_rate(mbit)": 24000000,
+        "computing_power": 40000000000,
+        "road_length": 2000,
+        "best_position": [
+            544.9552381572057,
+            444.8934220255654
+        ],
+        "best_fitness": -0.5130208333333334,
+        "UAV_number": 2
+    },
+    {
+        "data_rate(mbit)": 24000000,
+        "computing_power": 40000000000,
+        "road_length": 2000,
+        "best_position": [
+            620.5451607367979,
+            1186.589686117355,
+            443.1281136817344
+        ],
+        "best_fitness": -0.6276041666666666,
+        "UAV_number": 3
+    },
+    {
+        "data_rate(mbit)": 24000000,
+        "computing_power": 80000000000,
+        "road_length": 2000,
+        "best_position": [
+            1701.2601156572741
+        ],
+        "best_fitness": -0.028645833333333332,
+        "UAV_number": 1
+    },
+    {
+        "data_rate(mbit)": 24000000,
+        "computing_power": 80000000000,
+        "road_length": 2000,
+        "best_position": [
+            1002.9925675978658,
+            1522.089087977548
+        ],
+        "best_fitness": -0.18229166666666666,
+        "UAV_number": 2
+    },
+    {
+        "data_rate(mbit)": 24000000,
+        "computing_power": 80000000000,
+        "road_length": 2000,
+        "best_position": [
+            966.9517579062988,
+            609.4937374481465,
+            525.1217339805479
+        ],
+        "best_fitness": -0.640625,
+        "UAV_number": 3
+    },
+    {
+        "data_rate(mbit)": 24000000,
+        "computing_power": 100000000000,
+        "road_length": 2000,
+        "best_position": [
+            1806.7456953658793
+        ],
+        "best_fitness": -0.015625,
+        "UAV_number": 1
+    },
+    {
+        "data_rate(mbit)": 24000000,
+        "computing_power": 100000000000,
+        "road_length": 2000,
+        "best_position": [
+            831.2932074833896,
+            967.977736353412
+        ],
+        "best_fitness": -0.125,
+        "UAV_number": 2
+    },
+    {
+        "data_rate(mbit)": 24000000,
+        "computing_power": 100000000000,
+        "road_length": 2000,
+        "best_position": [
+            333.7869966600571,
+            1547.736821698914,
+            497.4789187779536
+        ],
+        "best_fitness": -0.43489583333333337,
+        "UAV_number": 3
+    }
+]

@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Path to your JSON file
-json_file = "simulation_results/normalized_output.json"  # Change this to your actual JSON file path
+json_file = "analyze/pm/pm-bat.json"  # Change this to your actual JSON file path
 
 # Function to load JSON
 def load_json(file_path):
@@ -68,5 +68,5 @@ ax.yaxis.set_major_locator(plt.MaxNLocator(nbins=10))  # Increase y-axis detail
 
 # Save and show plot
 plt.tight_layout()
-plt.savefig("success_probability_bar_chart.png", bbox_inches='tight')
+plt.savefig("analyze/pm/success_probability_bar_chart.png", bbox_inches='tight')
 plt.show()

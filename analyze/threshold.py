@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # File path for the algorithm results
-output_file_algo = "threshold/threshold.json"  # Change this to your file path
+output_file_algo = "analyze/threshold/threshold.json"  # Change this to your file path
 
 # Function to read and parse JSON files
 def load_json(file_path):
@@ -65,5 +65,5 @@ ax.grid(axis="y", linestyle="--", alpha=0.7)
 # Adjust layout and show the plot
 plt.xticks(thresholds)  # Ensure all threshold values are labeled on x-axis
 plt.tight_layout()
-plt.savefig("./threshold-success-ratio.png")  # Save the figure
+plt.savefig("analyze/threshold/threshold-success-ratio.png")  # Save the figure
 plt.show()

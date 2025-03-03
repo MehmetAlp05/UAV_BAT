@@ -53,9 +53,10 @@ def simulation(startPosition,startDirection,CAVs,allTask):
         if battery<0:
             break
         if allTask[instance]!=0:
-            delay=UplinkDelay(queue+instance,UAV_position+Parameters.UAVSpeed*UAV_direction*queue,CAVs,allTask,UAV_direction)#+Parameters.alpha*Parameters.C/Parameters.f
+            #delay=UplinkDelay(queue+instance,UAV_position+Parameters.UAVSpeed*UAV_direction*queue,CAVs,allTask,UAV_direction)+Parameters.alpha*Parameters.C/Parameters.f
+            delay=UplinkDelay(instance,UAV_position+Parameters.UAVSpeed*UAV_direction*queue,CAVs,allTask,UAV_direction)+Parameters.alpha*Parameters.C/Parameters.f
             #print(delay)
-            if delay<6:
+            if delay<9:
                 queue+=delay
                 finished=np.append(finished,instance)
             tasks=np.append(tasks,allTask[instance])
@@ -95,7 +96,7 @@ def sphere_function(x):
 
 # Parameters
 num_bats = 10
-dim = 1
+dim = 3
 num_iterations = 50
 freq_min = 0
 freq_max = 3
@@ -159,7 +160,9 @@ for iteration in range(num_iterations):
 
 print("\nOptimized Solution:", best_position)
 print("Best Fitness Value:", best_fitness)
-"""
+
+
+
 simulation_data={
     "data_rate(mbit)":Parameters.alpha,
     "simulation_runtime(seconds)":Parameters.T,
@@ -169,7 +172,10 @@ simulation_data={
     "UAV_number":dim,
     "iteration_number":num_iterations,
     "bat_number":num_bats,
-    "timestamp": datetime.now().isoformat()  # Add a unique timestamp for tracking
+    #"timestamp": datetime.now().isoformat(),  # Add a unique timestamp for tracking
+    "computing_power":Parameters.f*dim,
+    "transmission_power":Parameters.Pm,
+    "uav_altitude":Parameters.H
 }
 # Directory to save the final result
 output_dir = "simulation_results"
@@ -200,4 +206,3 @@ with open(output_file, "w") as f:
     json.dump(existing_data, f, indent=4)
 
 print(f"New simulation results appended to {output_file}.")
-"""

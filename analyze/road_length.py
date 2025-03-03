@@ -4,8 +4,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # File paths for both algorithms
-output_file_algo1 = "road_length/roadlength-bat.json"  
-output_file_algo2 = "road_length/simulation_results_road_length_UPD6.json"  
+output_file_algo1 = "analyze/road_length/roadlength-bat.json"  
+output_file_algo2 = "analyze/road_length/simulation_results_road_length_UPD6.json"  
 
 # Function to read and parse JSON files
 def load_json(file_path):
@@ -90,5 +90,5 @@ legend2 = ax.legend(handles=legend_algo, title="Algorithms", loc="lower right", 
 
 # Adjust layout and save the plot
 plt.tight_layout()
-plt.savefig("road-length-comparison.png")
+plt.savefig("analyze/road_length/road-length-comparison.png")
 plt.show()
