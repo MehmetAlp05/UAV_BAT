@@ -2,8 +2,8 @@ import json
 import matplotlib.pyplot as plt
 
 # Load data from two JSON files
-file1 = "analyze/cpu/cpu-bat.json"  # BA algorithm
-file2 = "analyze/cpu/cpu-pso.json"  # PSO algorithm
+file1 = "analyze/cpu/cpu-bat-alt copy.json"  # BA algorithm
+file2 = "analyze/cpu/cpu-bat-alt copy.json"  # PSO algorithm
 
 with open(file1, "r") as f:
     data1 = json.load(f)

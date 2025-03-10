@@ -5,7 +5,7 @@ from parameters import Parameters
 
 # TASK GENERATION
 m=1
-tau=400 #simulation time
+tau=Parameters.T #simulation time
 lam=1/tau 
 task_arrival=np.random.poisson(lam,tau)
 print(task_arrival.shape)
@@ -16,7 +16,7 @@ def TaskGenerator(runtime,num_event):
     return task_arrival
 
 ### CAVS
-car_rate=0.5
+car_rate=0.1
 sim_runtime=tau
 car_arrivals=np.random.poisson(car_rate,sim_runtime)
 print("car_arrivals\n",car_arrivals)
@@ -51,8 +51,8 @@ for index,arrival in enumerate(indices_of_arrivals):
     #calculation of the leaving time corresponding to road parameters
     CAVs[index].LeavingTime=int(arrival+(Parameters.RoadLength/CAVs[index].Speed))
     #position vector of the car
-    CAVs[index].PositionVector=np.zeros(Parameters.RoadLength)
-    for index_ in range(Parameters.RoadLength):
+    CAVs[index].PositionVector=np.zeros(Parameters.T)
+    for index_ in range(Parameters.T):
         if index_ > arrival and index_<CAVs[index].LeavingTime:
             CAVs[index].PositionVector[index_]=CAVs[index].PositionVector[index_-1]+CAVs[index].Speed
     #task generation for corresponding cars
@@ -69,9 +69,11 @@ for index,arrival in enumerate(indices_of_arrivals):
 np.save("./data/CAVs.npy",CAVs)
 allTask=np.zeros(Parameters.T)
 for index in range(len(CAVs)):
-    print("cav task time",index,CAVs[index].TaskTimes)
+    #print("cav task time",index,CAVs[index].TaskTimes)
     for index_,element_ in enumerate(CAVs[index].TaskTimes):
         allTask[element_]=index
+        print("all task",index)
+print(allTask)
 np.save("./data/allTask.npy",allTask)
 leavingTimes=np.zeros(len(CAVs))
 for index in range(len(CAVs)):

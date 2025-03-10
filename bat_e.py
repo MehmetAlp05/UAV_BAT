@@ -6,9 +6,11 @@ import json  # For saving data in JSON format
 from datetime import datetime
 import matplotlib.pyplot as plt
 from parameters import Parameters
+#add data
 CAVs=np.load("./data/CAVs.npy",allow_pickle=True)
 allTask=np.load("./data/allTask.npy")
 leavingTimes=np.load("./data/leavingTimes.npy")
+#functions
 def Gain(CAVPos,UAVPos):
     gain=10**(Parameters.G0/10)/(math.sqrt(Parameters.H**2+(CAVPos-UAVPos)**2))**2;
     return gain
@@ -55,12 +57,12 @@ def simulation(startPosition,startDirection,CAVs,allTask):
         if allTask[instance]!=0:
             #delay=UplinkDelay(queue+instance,UAV_position+Parameters.UAVSpeed*UAV_direction*queue,CAVs,allTask,UAV_direction)+Parameters.alpha*Parameters.C/Parameters.f
             delay=UplinkDelay(instance,UAV_position+Parameters.UAVSpeed*UAV_direction*queue,CAVs,allTask,UAV_direction)+Parameters.alpha*Parameters.C/Parameters.f
-            #print(delay)
-            if delay<9:
+            print(delay)
+            if delay<=Parameters.Qm:
                 queue+=delay
                 finished=np.append(finished,instance)
             tasks=np.append(tasks,allTask[instance])
-        if UAV_position+Parameters.UAVSpeed*UAV_direction>1000 or UAV_position+Parameters.UAVSpeed*UAV_direction<0:
+        if UAV_position+Parameters.UAVSpeed*UAV_direction>Parameters.RoadLength or UAV_position+Parameters.UAVSpeed*UAV_direction<0:
             UAV_direction*=-1
         UAV_position+=Parameters.UAVSpeed*UAV_direction
         if queue>0:
@@ -95,8 +97,8 @@ def sphere_function(x):
     return np.sum(x**2)
 
 # Parameters
-num_bats = 10
-dim = 3
+num_bats = 30
+dim = 1
 num_iterations = 50
 freq_min = 0
 freq_max = 3
@@ -105,7 +107,7 @@ r0 = 0.5
 alpha = 0.9
 gamma = 0.9
 lb = 0
-ub = 999
+ub = Parameters.RoadLength-1
 
 # Initialize bat positions and velocities
 positions = np.random.uniform(lb, ub, (num_bats, dim))
