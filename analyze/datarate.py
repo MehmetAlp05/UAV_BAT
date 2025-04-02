@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # File paths for the three algorithms
-output_file_algo1 = "analyze/datarate/datarate-bat.json"
+output_file_algo1 = "analyze/datarate/bat test.json"
 output_file_algo2 = "analyze/overall/IE-LP_results/final_results.json"
 output_file_algo3 = "analyze/datarate/simulation_results_data_rate_6.json"
 

@@ -1,6 +1,6 @@
 class Parameters:
     # Parameters
-    alpha=5*10**6;#bits
+    alpha=9*10**6;#bits
     T=1800;#seconds
     sigma=1;#Time slot (in seconds)
     C=1000;#cycle per bit
@@ -9,8 +9,8 @@ class Parameters:
     H=80;#meters
     N0=-130;#dBm/Hz
     B=20*10**6;#Hz
-    Pm=35-0;#dBm
-    Qm=7;#seconds
+    Pm=35;#dBm
+    Qm=6;#seconds
     RoadLength=1000;
     V_max = 20; # m/sec;
     U = 120; # m/sec
@@ -31,3 +31,7 @@ class Parameters:
     b_omega = 300;
     b_R = 0.4;
     E_max=700*(10**3);#joule
+
+
+    UAVNumber=3;
+    ParticleCount=10;

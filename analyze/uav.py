@@ -4,9 +4,9 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # File paths for the three algorithms
-output_file_algo1 = "analyze/datarate/test.json"
-output_file_algo2 = "analyze/overall/IE-LP_results/final_results.json"
-output_file_algo3 = "analyze/datarate/simulation_results_data_rate_6.json"
+output_file_algo1 = "analyze/datarate/bat test.json"
+output_file_algo2 = "analyze/datarate/ielp test.json"
+output_file_algo3 = "analyze/datarate/pso test.json"
 
 def load_json(file_path):
     if not os.path.exists(file_path):
@@ -77,7 +77,7 @@ for data_rates, uav_numbers, best_fitness_values, label in [
         ax.scatter(sorted_data_rates, sorted_fitness, s=50, color=color, marker=marker)
         ax.plot(sorted_data_rates, sorted_fitness, linestyle=linestyle, alpha=0.7, color=color)
 
-ax.set_xlabel("Data Rate (Mbit)", fontsize=16)
+ax.set_xlabel("Data Size (Mbit)", fontsize=16)
 ax.set_ylabel("Success Probability", fontsize=16)
 ax.grid(True)
 
@@ -85,7 +85,7 @@ ax.grid(True)
 legend1 = ax.legend(handles=legend_lines, title="Number of UAVs", loc="lower left", fontsize=12)
 ax.add_artist(legend1)  # Add the first legend manually
 
-legend2 = ax.legend(handles=legend_markers, title="Algorithm", loc="lower right", fontsize=12)
+legend2 = ax.legend(handles=legend_markers, title="Algorithm", loc="lower left", fontsize=12,bbox_to_anchor=(0, 0.20))
 
 plt.tight_layout()
 plt.savefig("analyze/datarate/success_ratio_vs_data_rate.png")

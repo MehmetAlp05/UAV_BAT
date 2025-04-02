@@ -4,8 +4,9 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # File paths for both algorithms
-output_file_algo1 = "analyze/road_length/roadlength-bat.json"  
-output_file_algo2 = "analyze/road_length/simulation_results_road_length_UPD6.json"  
+output_file_algo1 = "analyze/road_length/road-bat2.json"  
+#output_file_algo2 = "analyze/road_length/pso-roadd.json"  
+output_file_algo2 = "analyze/road_length/road-ielp.json"  
 
 # Function to read and parse JSON files
 def load_json(file_path):
@@ -86,7 +87,7 @@ legend_algo = [plt.Line2D([0], [0], color="black", linestyle=line_styles[algo], 
 legend1 = ax.legend(handles=legend_uav, title="Number of UAVs", loc="upper right", fontsize=12)
 ax.add_artist(legend1)  # Add UAV legend manually
 
-legend2 = ax.legend(handles=legend_algo, title="Algorithms", loc="lower right", fontsize=12)
+legend2 = ax.legend(handles=legend_algo, title="Algorithms", loc="upper right", fontsize=12,bbox_to_anchor=(1, 0.8))
 
 # Adjust layout and save the plot
 plt.tight_layout()

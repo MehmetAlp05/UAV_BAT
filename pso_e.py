@@ -1,6 +1,3 @@
-import time
-start_time = time.time()
-#bat simulation with energy constraints
 import numpy as np
 import math
 import os
@@ -8,6 +5,8 @@ import json  # For saving data in JSON format
 from datetime import datetime
 import matplotlib.pyplot as plt
 from parameters import Parameters
+
+#--------------------------------------------------------
 #add data
 CAVs=np.load("./data/CAVs.npy",allow_pickle=True)
 allTask=np.load("./data/allTask.npy")
@@ -75,13 +74,12 @@ def simulation(startPosition,startDirection,CAVs,allTask):
     #print("finished",finished)
     #print("succces ratio is %",100*finished/len(tasks))
     return finished
-""""
 example_sim=simulation(0,1,CAVs,allTask)
 print(len(example_sim))
 #print(allTask)
 print("total task",np.count_nonzero(allTask))
 print(len(example_sim)/np.count_nonzero(allTask))
-"""
+
 def multiple_function(pos,CAVs,allTask):
     task_matrix=np.zeros((len(pos),np.count_nonzero(allTask)))
     #print(np.shape(task_matrix))
@@ -92,122 +90,123 @@ def multiple_function(pos,CAVs,allTask):
     unique=np.unique(task_matrix[task_matrix!=0])
     return -len(unique)/np.count_nonzero(allTask)
 score=multiple_function([999,999],CAVs,allTask)
-#print("score",score)
-#print("task number is",len(allTask[allTask!=0]))
-#print(allTask.shape)
-# replace this 
-def sphere_function(x):
-    return np.sum(x**2)
+print("score",score)
 
-# Parameters
-num_bats = 60
-dim = 3
-num_iterations = 50
-freq_min = 0
-freq_max = 3
-A = 0.5
-r0 = 0.5
-alpha = 0.9
-gamma = 0.9
+#--------------------------------------------------------
+# PSO Parameters
+numParticles = 20  # Number of particles in the swarm
+maxIterations = 50  # Maximum number of iterations
+c1 = 2  # Cognitive coefficient
+c2 = 2  # Social coefficient
+w = 0.7  # Inertia weight
+
+# Problem-specific parameters
+Dim = 1  # Dimensionality of the problem
+# Define your problem here, including the objective function and any constraints
 lb = 0
 ub = Parameters.RoadLength-1
 
-# Initialize bat positions and velocities
-positions = np.random.uniform(lb, ub, (num_bats, dim))
-velocities = np.zeros((num_bats, dim))
-frequencies = np.zeros(num_bats)
-loudness = A * np.ones(num_bats)
-pulse_rate = r0 * np.ones(num_bats)
+# Define the PSO function
+def pso():
+    # Initialize the swarm
+    position = np.random.uniform(lb, ub, (numParticles, Dim))  # Particle positions
+    velocity = np.zeros((numParticles, Dim))  # Particle velocities
+    personalBest = position.copy()  # Personal best positions
+    personalBestFitness = np.zeros(numParticles) + np.inf  # Personal best fitness values
+    globalBest = np.zeros(Dim)  # Global best position
+    globalBestFitness = np.inf  # Global best fitness value
 
-# Evaluate initial fitness
-fitness = np.apply_along_axis(lambda pos: multiple_function(pos, CAVs, allTask), 1, positions)
-best_position = positions[np.argmin(fitness)]
-best_fitness = np.min(fitness)
+    # Main loop
+    for iteration in range(maxIterations):
+        # Evaluate fitness for each particle
+        fitness = np.apply_along_axis(lambda pos: multiple_function(pos, CAVs, allTask), 1, position)
+        for i in range(numParticles):
+            # Update personal best if better fitness is found
+            if fitness[i] < personalBestFitness[i]:
+                personalBest[i] = position[i]
+                personalBestFitness[i] = fitness[i]
 
-for iteration in range(num_iterations):
-    avg_loudness = np.mean(loudness)
-    avg_pulse_rate = np.mean(pulse_rate)
-    
-    # Update bats
-    for i in range(num_bats):
-        beta = np.random.uniform(0, 1)
-        frequencies[i] = freq_min + (freq_max - freq_min) * beta
-        velocities[i] += (positions[i] - best_position) * frequencies[i]
-        new_position = positions[i] + velocities[i]
-        
-        # Boundary check
-        new_position = np.clip(new_position, lb, ub)
-        
-        # Local search
-        if np.random.uniform(0, 1) > pulse_rate[i]:
-            epsilon = np.random.uniform(-1, 1)
-            new_position = positions[i] + epsilon * avg_loudness
-        
-        # Evaluate new solution
-        new_fitness = multiple_function(new_position,CAVs,allTask)
-        
-        # Greedy mechanism to update if new solution is better and random value is less than loudness
-        if new_fitness < fitness[i] and np.random.uniform(0, 1) < loudness[i]:
-            positions[i] = new_position
-            fitness[i] = new_fitness
-            
-        # Update global best
-        if fitness[i] < best_fitness:
-            best_position = positions[i]
-            best_fitness = fitness[i]
-            print("new position")
-            
-        loudness[i] *= alpha
-        pulse_rate[i] = r0 * (1 - np.exp(-gamma * iteration))
-            
-    # Print the best fitness value in each iteration
-    print(f"Iteration {iteration + 1}: Best Fitness = {best_fitness}")
+            # Update global best if better fitness is found
+            if fitness[i] < globalBestFitness:
+                globalBest = position[i]
+                globalBestFitness = fitness[i]
 
-print("\nOptimized Solution:", best_position)
-print("Best Fitness Value:", best_fitness)
-print("--- %s seconds ---" % (time.time() - start_time))
+        # Update particle velocities and positions
+        for i in range(numParticles):
+            r1 = np.random.rand(Dim)
+            r2 = np.random.rand(Dim)
+            velocity[i] = w * velocity[i] \
+                          + c1 * r1 * (personalBest[i] - position[i]) \
+                          + c2 * r2 * (globalBest - position[i])
+            print(position[i])
+            print(velocity[i])
+            print(position+velocity[i])
 
+            if (position[i] + velocity[i]).all()>lb and (position[i] + velocity[i]).all()<ub:
+                position[i] = position[i] + velocity[i]
 
-simulation_data={
+            # Apply any necessary constraints to the particle positions
+
+            # Update fitness if necessary
+
+            # Display current best fitness
+            print(f'Iteration {iteration + 1}: Best Fitness = {globalBestFitness}')
+
+    # Display final result
+    print('Optimization Complete!')
+    print(f'Best Fitness = {globalBestFitness}')
+    print(f'Best Position = {globalBest}')
+
+    best_fitness=globalBestFitness
+    best_position=globalBest
+    dim=Dim
+    simulation_data={
     "data_rate(mbit)":Parameters.alpha,
     "simulation_runtime(seconds)":Parameters.T,
     "road_length":Parameters.RoadLength,
     "best_position":best_position.tolist(),
     "best_fitness":best_fitness,
     "UAV_number":dim,
-    "iteration_number":num_iterations,
-    "bat_number":num_bats,
     #"timestamp": datetime.now().isoformat(),  # Add a unique timestamp for tracking
     "computing_power":Parameters.f,
     "transmission_power":Parameters.Pm,
     "uav_altitude":Parameters.H
-}
-# Directory to save the final result
-output_dir = "simulation_results"
-os.makedirs(output_dir, exist_ok=True)
-# Save all data at the end
-output_file = os.path.join(output_dir, "final_results.json")
-# Check if the file exists and load existing data
-if os.path.exists(output_file):
-    with open(output_file, "r") as f:
-        try:
-            existing_data = json.load(f)
-            if isinstance(existing_data, dict):
-                # Convert the single dictionary to a list
-                existing_data = [existing_data]
-            elif not isinstance(existing_data, list):
-                raise ValueError("Unexpected JSON structure in the file.")
-        except json.JSONDecodeError:
-            # File exists but is empty or invalid
-            existing_data = []
-else:
-    existing_data = []
+    }
+    # Directory to save the final result
+    output_dir = "pso_results"
+    os.makedirs(output_dir, exist_ok=True)
+    # Save all data at the end
+    output_file = os.path.join(output_dir, "final_results.json")
+    # Check if the file exists and load existing data
+    if os.path.exists(output_file):
+        with open(output_file, "r") as f:
+            try:
+                existing_data = json.load(f)
+                if isinstance(existing_data, dict):
+                    # Convert the single dictionary to a list
+                    existing_data = [existing_data]
+                elif not isinstance(existing_data, list):
+                    raise ValueError("Unexpected JSON structure in the file.")
+            except json.JSONDecodeError:
+                # File exists but is empty or invalid
+                existing_data = []
+    else:
+        existing_data = []
 
-# Append the new simulation run
-existing_data.append(simulation_data)
+    # Append the new simulation run
+    existing_data.append(simulation_data)
 
-# Save the updated data back to the file
-with open(output_file, "w") as f:
-    json.dump(existing_data, f, indent=4)
+    # Save the updated data back to the file
+    with open(output_file, "w") as f:
+        json.dump(existing_data, f, indent=4)
 
-print(f"New simulation results appended to {output_file}.")
+    print(f"New simulation results appended to {output_file}.")
+
+# Define your objective function
+def objective_function(x):
+    # Define your objective function here
+    pass
+
+
+# Run the PSO algorithm
+pso()

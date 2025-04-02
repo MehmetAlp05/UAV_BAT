@@ -1,0 +1,1083 @@
+
+[
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 500,
+        "best_position": [
+            150.30707834962524
+        ],
+        "best_fitness": -0.6666666666666667,
+        "UAV_number": 1
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 500,
+        "best_position": [
+            166.80296679304516,
+            131.31510114403872
+        ],
+        "best_fitness": -0.8809523809523812,
+        "UAV_number": 2
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 500,
+        "best_position": [
+            229.82569220653934,
+            241.6101282209992,
+            180.9456857098135
+        ],
+        "best_fitness": -0.9126984126984127,
+        "UAV_number": 3
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 600,
+        "best_position": [
+            197.52486345652798
+        ],
+        "best_fitness": -0.6666666666666667,
+        "UAV_number": 1
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 600,
+        "best_position": [
+            126.79672453569206,
+            219.21493782657342
+        ],
+        "best_fitness": -0.8809523809523812,
+        "UAV_number": 2
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 600,
+        "best_position": [
+            302.84402457174093,
+            192.1884394671704,
+            192.13964436897027
+        ],
+        "best_fitness": -0.9146825396825398,
+        "UAV_number": 3
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 700,
+        "best_position": [
+            213.46081384818794
+        ],
+        "best_fitness": -0.6666666666666667,
+        "UAV_number": 1
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 700,
+        "best_position": [
+            183.3007285036255,
+            209.0992207625927
+        ],
+        "best_fitness": -0.8452380952380953,
+        "UAV_number": 2
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 700,
+        "best_position": [
+            192.69542437297787,
+            428.74952100741376,
+            166.3994307882774
+        ],
+        "best_fitness": -0.9146825396825398,
+        "UAV_number": 3
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 800,
+        "best_position": [
+            172.6961624045001
+        ],
+        "best_fitness": -0.6666666666666667,
+        "UAV_number": 1
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 800,
+        "best_position": [
+            58.94796020885361,
+            174.0712765232188
+        ],
+        "best_fitness": -0.8809523809523812,
+        "UAV_number": 2
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 800,
+        "best_position": [
+            279.2970616185562,
+            531.9170138488988,
+            52.675119419576255
+        ],
+        "best_fitness": -0.9166666666666667,
+        "UAV_number": 3
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 900,
+        "best_position": [
+            146.74085995502418
+        ],
+        "best_fitness": -0.6666666666666667,
+        "UAV_number": 1
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 900,
+        "best_position": [
+            163.6769383620534,
+            177.51358854836417
+        ],
+        "best_fitness": -0.8809523809523812,
+        "UAV_number": 2
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 900,
+        "best_position": [
+            706.2377193424172,
+            232.29803544856085,
+            203.9924477784891
+        ],
+        "best_fitness": -0.9107142857142857,
+        "UAV_number": 3
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 1000,
+        "best_position": [
+            271.6647775761466
+        ],
+        "best_fitness": -0.5376984126984128,
+        "UAV_number": 1
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 1000,
+        "best_position": [
+            391.35570486634634,
+            210.0707235701508
+        ],
+        "best_fitness": -0.8035714285714286,
+        "UAV_number": 2
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 1000,
+        "best_position": [
+            119.87700485047317,
+            521.2082735371696,
+            303.85488177834276
+        ],
+        "best_fitness": -0.9126984126984128,
+        "UAV_number": 3
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 1100,
+        "best_position": [
+            268.19085364086385
+        ],
+        "best_fitness": -0.5238095238095238,
+        "UAV_number": 1
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 1100,
+        "best_position": [
+            125.31368217286176,
+            119.66455014142058
+        ],
+        "best_fitness": -0.8809523809523812,
+        "UAV_number": 2
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 1100,
+        "best_position": [
+            290.82074522611146,
+            350.2253871110754,
+            411.79270338513373
+        ],
+        "best_fitness": -0.9166666666666667,
+        "UAV_number": 3
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 1200,
+        "best_position": [
+            336.3629419163442
+        ],
+        "best_fitness": -0.511904761904762,
+        "UAV_number": 1
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 1200,
+        "best_position": [
+            204.66457604896928,
+            186.9244401818015
+        ],
+        "best_fitness": -0.8452380952380953,
+        "UAV_number": 2
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 1200,
+        "best_position": [
+            260.692757382205,
+            470.6090730891286,
+            224.9485855384187
+        ],
+        "best_fitness": -0.9146825396825398,
+        "UAV_number": 3
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 1300,
+        "best_position": [
+            177.61434766311788
+        ],
+        "best_fitness": -0.6666666666666667,
+        "UAV_number": 1
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 1300,
+        "best_position": [
+            221.21121264857868,
+            346.73328012658794
+        ],
+        "best_fitness": -0.8313492063492064,
+        "UAV_number": 2
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 1300,
+        "best_position": [
+            161.95484418472617,
+            573.1741335894616,
+            545.9191750325172
+        ],
+        "best_fitness": -0.8869047619047621,
+        "UAV_number": 3
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 1400,
+        "best_position": [
+            203.43986872402095
+        ],
+        "best_fitness": -0.6666666666666667,
+        "UAV_number": 1
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 1400,
+        "best_position": [
+            622.2247421378912,
+            210.0326385119122
+        ],
+        "best_fitness": -0.7698412698412699,
+        "UAV_number": 2
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 1400,
+        "best_position": [
+            163.69388812059708,
+            733.415289630249,
+            183.72602111727363
+        ],
+        "best_fitness": -0.9166666666666667,
+        "UAV_number": 3
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 1500,
+        "best_position": [
+            178.70127649052733
+        ],
+        "best_fitness": -0.6666666666666667,
+        "UAV_number": 1
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 1500,
+        "best_position": [
+            150.9514197742831,
+            162.48753346644853
+        ],
+        "best_fitness": -0.8809523809523812,
+        "UAV_number": 2
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 1500,
+        "best_position": [
+            765.6994266251071,
+            515.6753880709281,
+            123.72812608775575
+        ],
+        "best_fitness": -0.8968253968253969,
+        "UAV_number": 3
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 1600,
+        "best_position": [
+            400.9553022978175
+        ],
+        "best_fitness": -0.3829365079365079,
+        "UAV_number": 1
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 1600,
+        "best_position": [
+            744.2635932630697,
+            552.726084080253
+        ],
+        "best_fitness": -0.736111111111111,
+        "UAV_number": 2
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 1600,
+        "best_position": [
+            352.40978855612565,
+            411.33289110030427,
+            533.1407527945053
+        ],
+        "best_fitness": -0.882936507936508,
+        "UAV_number": 3
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 1700,
+        "best_position": [
+            207.78337562214003
+        ],
+        "best_fitness": -0.6666666666666667,
+        "UAV_number": 1
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 1700,
+        "best_position": [
+            384.72143213739696,
+            261.5250083419517
+        ],
+        "best_fitness": -0.7638888888888891,
+        "UAV_number": 2
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 1700,
+        "best_position": [
+            424.2426386985174,
+            192.7299122805604,
+            996.7885881450544
+        ],
+        "best_fitness": -0.8948412698412699,
+        "UAV_number": 3
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 1800,
+        "best_position": [
+            225.66968912867318
+        ],
+        "best_fitness": -0.6666666666666667,
+        "UAV_number": 1
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 1800,
+        "best_position": [
+            259.9023177944369,
+            292.6051462387774
+        ],
+        "best_fitness": -0.7936507936507937,
+        "UAV_number": 2
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 1800,
+        "best_position": [
+            350.69843821683116,
+            759.2170597443834,
+            512.6649958751153
+        ],
+        "best_fitness": -0.8650793650793651,
+        "UAV_number": 3
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 1900,
+        "best_position": [
+            239.44000748002745
+        ],
+        "best_fitness": -0.5376984126984128,
+        "UAV_number": 1
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 1900,
+        "best_position": [
+            386.8071816646629,
+            385.1712917052837
+        ],
+        "best_fitness": -0.7619047619047619,
+        "UAV_number": 2
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 1900,
+        "best_position": [
+            410.5426811410644,
+            459.967028605193,
+            349.56913254150913
+        ],
+        "best_fitness": -0.8690476190476192,
+        "UAV_number": 3
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 2000,
+        "best_position": [
+            298.25691071334376
+        ],
+        "best_fitness": -0.4087301587301587,
+        "UAV_number": 1
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 2000,
+        "best_position": [
+            991.3832702916749,
+            152.01956929706674
+        ],
+        "best_fitness": -0.7638888888888888,
+        "UAV_number": 2
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 2000,
+        "best_position": [
+            726.1292667753014,
+            557.7128439985181,
+            687.2383294704608
+        ],
+        "best_fitness": -0.8273809523809524,
+        "UAV_number": 3
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 2100,
+        "best_position": [
+            212.30201056052542
+        ],
+        "best_fitness": -0.6666666666666667,
+        "UAV_number": 1
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 2100,
+        "best_position": [
+            758.8321818274562,
+            803.8412320754019
+        ],
+        "best_fitness": -0.8035714285714288,
+        "UAV_number": 2
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 2100,
+        "best_position": [
+            359.2105341298113,
+            962.8048316449867,
+            651.7184536461438
+        ],
+        "best_fitness": -0.8432539682539683,
+        "UAV_number": 3
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 2200,
+        "best_position": [
+            194.149031902612
+        ],
+        "best_fitness": -0.5476190476190476,
+        "UAV_number": 1
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 2200,
+        "best_position": [
+            1755.0461980309426,
+            204.4115660796632
+        ],
+        "best_fitness": -0.75,
+        "UAV_number": 2
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 2200,
+        "best_position": [
+            172.8013526921312,
+            263.38340686063685,
+            1414.0208510856512
+        ],
+        "best_fitness": -0.9146825396825398,
+        "UAV_number": 3
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 2300,
+        "best_position": [
+            195.1687540584096
+        ],
+        "best_fitness": -0.6666666666666667,
+        "UAV_number": 1
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 2300,
+        "best_position": [
+            1164.550941928498,
+            190.95543104226883
+        ],
+        "best_fitness": -0.6646825396825397,
+        "UAV_number": 2
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 2300,
+        "best_position": [
+            918.8068500730336,
+            1701.750286826782,
+            190.64420327741868
+        ],
+        "best_fitness": -0.7738095238095237,
+        "UAV_number": 3
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 2400,
+        "best_position": [
+            644.2183862683793
+        ],
+        "best_fitness": -0.507936507936508,
+        "UAV_number": 1
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 2400,
+        "best_position": [
+            567.7461227059713,
+            128.0076521656994
+        ],
+        "best_fitness": -0.7896825396825397,
+        "UAV_number": 2
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 2400,
+        "best_position": [
+            257.9295948745192,
+            141.48195523695233,
+            1246.4861849192537
+        ],
+        "best_fitness": -0.8710317460317463,
+        "UAV_number": 3
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 2500,
+        "best_position": [
+            375.9661707433231
+        ],
+        "best_fitness": -0.3869047619047619,
+        "UAV_number": 1
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 2500,
+        "best_position": [
+            1073.173810435552,
+            817.4041855486334
+        ],
+        "best_fitness": -0.7559523809523809,
+        "UAV_number": 2
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 2500,
+        "best_position": [
+            378.5098249696425,
+            463.8702448494605,
+            1045.0624823984556
+        ],
+        "best_fitness": -0.8492063492063493,
+        "UAV_number": 3
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 2600,
+        "best_position": [
+            211.863099322969
+        ],
+        "best_fitness": -0.5456349206349207,
+        "UAV_number": 1
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 2600,
+        "best_position": [
+            432.45127724500367,
+            194.6591212535861
+        ],
+        "best_fitness": -0.8015873015873016,
+        "UAV_number": 2
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 2600,
+        "best_position": [
+            1270.0951690309987,
+            995.3405350002025,
+            129.87905731271235
+        ],
+        "best_fitness": -0.8591269841269842,
+        "UAV_number": 3
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 2700,
+        "best_position": [
+            324.09870819210005
+        ],
+        "best_fitness": -0.5198412698412699,
+        "UAV_number": 1
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 2700,
+        "best_position": [
+            840.4599232158085,
+            535.1181653029518
+        ],
+        "best_fitness": -0.7023809523809524,
+        "UAV_number": 2
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 2700,
+        "best_position": [
+            1854.789531112121,
+            580.6293552091894,
+            315.3757712637826
+        ],
+        "best_fitness": -0.8174603174603174,
+        "UAV_number": 3
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 2800,
+        "best_position": [
+            217.38462803150614
+        ],
+        "best_fitness": -0.6666666666666667,
+        "UAV_number": 1
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 2800,
+        "best_position": [
+            917.5888061184957,
+            231.43929736154791
+        ],
+        "best_fitness": -0.7718253968253969,
+        "UAV_number": 2
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 2800,
+        "best_position": [
+            1215.9432361241018,
+            204.02766466059938,
+            1085.362087726911
+        ],
+        "best_fitness": -0.7936507936507935,
+        "UAV_number": 3
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 2900,
+        "best_position": [
+            270.5641148570231
+        ],
+        "best_fitness": -0.5376984126984128,
+        "UAV_number": 1
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 2900,
+        "best_position": [
+            1238.1903347794603,
+            149.08470743752278
+        ],
+        "best_fitness": -0.7460317460317459,
+        "UAV_number": 2
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 2900,
+        "best_position": [
+            1639.2166536659872,
+            635.1102585907802,
+            1026.6422991383265
+        ],
+        "best_fitness": -0.7103174603174602,
+        "UAV_number": 3
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 3000,
+        "best_position": [
+            204.42476748583826
+        ],
+        "best_fitness": -0.6666666666666667,
+        "UAV_number": 1
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 3000,
+        "best_position": [
+            963.7282577706084,
+            287.01576696873116
+        ],
+        "best_fitness": -0.6527777777777779,
+        "UAV_number": 2
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 3000,
+        "best_position": [
+            1147.2247591863436,
+            844.662344769924,
+            1292.2959068165626
+        ],
+        "best_fitness": -0.7321428571428571,
+        "UAV_number": 3
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 3100,
+        "best_position": [
+            286.1064232213538
+        ],
+        "best_fitness": -0.5198412698412699,
+        "UAV_number": 1
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 3100,
+        "best_position": [
+            531.4344884021929,
+            658.1947446782765
+        ],
+        "best_fitness": -0.5297619047619048,
+        "UAV_number": 2
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 3100,
+        "best_position": [
+            853.6122893383246,
+            1337.8504524897883,
+            850.0854127021693
+        ],
+        "best_fitness": -0.8293650793650794,
+        "UAV_number": 3
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 3200,
+        "best_position": [
+            411.74479130905667
+        ],
+        "best_fitness": -0.3829365079365079,
+        "UAV_number": 1
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 3200,
+        "best_position": [
+            1010.1078978892064,
+            231.62667918367978
+        ],
+        "best_fitness": -0.753968253968254,
+        "UAV_number": 2
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 3200,
+        "best_position": [
+            1368.6822481632955,
+            1479.4761307132019,
+            101.48425442515567
+        ],
+        "best_fitness": -0.8154761904761904,
+        "UAV_number": 3
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 3300,
+        "best_position": [
+            204.26416538493106
+        ],
+        "best_fitness": -0.6666666666666667,
+        "UAV_number": 1
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 3300,
+        "best_position": [
+            789.5548501805996,
+            927.1445873210833
+        ],
+        "best_fitness": -0.7460317460317459,
+        "UAV_number": 2
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 3300,
+        "best_position": [
+            1904.9632800307234,
+            450.19754219266696,
+            1278.7868263167395
+        ],
+        "best_fitness": -0.6984126984126984,
+        "UAV_number": 3
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 3400,
+        "best_position": [
+            880.1979182471969
+        ],
+        "best_fitness": -0.36111111111111116,
+        "UAV_number": 1
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 3400,
+        "best_position": [
+            1628.369451781201,
+            231.6506418226553
+        ],
+        "best_fitness": -0.7539682539682541,
+        "UAV_number": 2
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 3400,
+        "best_position": [
+            1278.749689495951,
+            1490.6884545445464,
+            828.4811607405305
+        ],
+        "best_fitness": -0.6944444444444444,
+        "UAV_number": 3
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 3500,
+        "best_position": [
+            302.40566025377643
+        ],
+        "best_fitness": -0.4087301587301587,
+        "UAV_number": 1
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 3500,
+        "best_position": [
+            825.4468466642885,
+            386.3805339306411
+        ],
+        "best_fitness": -0.7698412698412698,
+        "UAV_number": 2
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 3500,
+        "best_position": [
+            1853.867225810746,
+            1760.8722946634055,
+            70.08237705493381
+        ],
+        "best_fitness": -0.7658730158730158,
+        "UAV_number": 3
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 3600,
+        "best_position": [
+            832.402045643618
+        ],
+        "best_fitness": -0.21626984126984128,
+        "UAV_number": 1
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 3600,
+        "best_position": [
+            1691.6582456499139,
+            401.91584095996836
+        ],
+        "best_fitness": -0.6031746031746033,
+        "UAV_number": 2
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 3600,
+        "best_position": [
+            883.5229590051604,
+            831.4179271865559,
+            1143.8691963603749
+        ],
+        "best_fitness": -0.6884920634920636,
+        "UAV_number": 3
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 3700,
+        "best_position": [
+            370.00151206245476
+        ],
+        "best_fitness": -0.511904761904762,
+        "UAV_number": 1
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 3700,
+        "best_position": [
+            1155.0437580571768,
+            1025.833109688617
+        ],
+        "best_fitness": -0.621031746031746,
+        "UAV_number": 2
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 3700,
+        "best_position": [
+            1732.5703881102356,
+            608.2609630201435,
+            770.2722327425241
+        ],
+        "best_fitness": -0.7916666666666667,
+        "UAV_number": 3
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 3800,
+        "best_position": [
+            310.3120609203804
+        ],
+        "best_fitness": -0.5238095238095238,
+        "UAV_number": 1
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 3800,
+        "best_position": [
+            1469.4711238281943,
+            336.6388862639085
+        ],
+        "best_fitness": -0.75,
+        "UAV_number": 2
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 3800,
+        "best_position": [
+            1859.8054965325234,
+            1555.868642346819,
+            673.2514786761409
+        ],
+        "best_fitness": -0.7777777777777779,
+        "UAV_number": 3
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 3900,
+        "best_position": [
+            314.55173257322946
+        ],
+        "best_fitness": -0.4007936507936508,
+        "UAV_number": 1
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 3900,
+        "best_position": [
+            1186.11862062062,
+            380.0771678164233
+        ],
+        "best_fitness": -0.7539682539682541,
+        "UAV_number": 2
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 3900,
+        "best_position": [
+            83.72308787991163,
+            1639.8517519382092,
+            1519.2904635090833
+        ],
+        "best_fitness": -0.7817460317460317,
+        "UAV_number": 3
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 4000,
+        "best_position": [
+            206.51567813679176
+        ],
+        "best_fitness": -0.6666666666666667,
+        "UAV_number": 1
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 4000,
+        "best_position": [
+            2795.697877353629,
+            115.83332253019789
+        ],
+        "best_fitness": -0.6706349206349207,
+        "UAV_number": 2
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 4000,
+        "best_position": [
+            711.2814724107502,
+            2930.5323319341346,
+            796.1608828930872
+        ],
+        "best_fitness": -0.748015873015873,
+        "UAV_number": 3
+    }
+]

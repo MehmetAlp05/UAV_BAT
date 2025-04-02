@@ -1,0 +1,167 @@
+[
+    {
+        "data_rate(mbit)": 7000000,
+        "transmission_power": 20,
+        "road_length": 1000,
+        "best_position": [
+            564.2409570997585
+        ],
+        "best_fitness": -0.0,
+        "UAV_number": 1
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "transmission_power": 20,
+        "road_length": 1000,
+        "best_position": [
+            340.4837171755068,
+            830.6213383604581
+        ],
+        "best_fitness": -0.0,
+        "UAV_number": 2
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "transmission_power": 20,
+        "road_length": 1000,
+        "best_position": [
+            408.68833064344744,
+            474.0831461007286,
+            526.7245810236718
+        ],
+        "best_fitness": -0.0,
+        "UAV_number": 3
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "transmission_power": 25,
+        "road_length": 1000,
+        "best_position": [
+            92.42729528154591
+        ],
+        "best_fitness": -0.19099099099099096,
+        "UAV_number": 1
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "transmission_power": 25,
+        "road_length": 1000,
+        "best_position": [
+            548.6914093451365,
+            33.242473683274696
+        ],
+        "best_fitness": -0.23423423423423426,
+        "UAV_number": 2
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "transmission_power": 25,
+        "road_length": 1000,
+        "best_position": [
+            162.3959968052296,
+            110.24525299546895,
+            640.2633663839806
+        ],
+        "best_fitness": -0.2522522522522523,
+        "UAV_number": 3
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "transmission_power": 30,
+        "road_length": 1000,
+        "best_position": [
+            81.64602928044785
+        ],
+        "best_fitness": -0.6810810810810811,
+        "UAV_number": 1
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "transmission_power": 30,
+        "road_length": 1000,
+        "best_position": [
+            258.3935819478678,
+            90.72984285393424
+        ],
+        "best_fitness": -0.8774774774774774,
+        "UAV_number": 2
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "transmission_power": 30,
+        "road_length": 1000,
+        "best_position": [
+            480.6555997984652,
+            428.4577115447503,
+            105.69066341305965
+        ],
+        "best_fitness": -0.9387387387387388,
+        "UAV_number": 3
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "transmission_power": 35,
+        "road_length": 1000,
+        "best_position": [
+            264.758881123345
+        ],
+        "best_fitness": -0.6702702702702703,
+        "UAV_number": 1
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "transmission_power": 35,
+        "road_length": 1000,
+        "best_position": [
+            313.03990358044587,
+            232.62831836010764
+        ],
+        "best_fitness": -0.9477477477477477,
+        "UAV_number": 2
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "transmission_power": 35,
+        "road_length": 1000,
+        "best_position": [
+            248.93419894092406,
+            454.74946330209787,
+            234.56267827097966
+        ],
+        "best_fitness": -0.9927927927927926,
+        "UAV_number": 3
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "transmission_power": 40,
+        "road_length": 1000,
+        "best_position": [
+            562.777062438685
+        ],
+        "best_fitness": -0.7243243243243244,
+        "UAV_number": 1
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "transmission_power": 40,
+        "road_length": 1000,
+        "best_position": [
+            593.6529372721931,
+            399.09732406003803
+        ],
+        "best_fitness": -0.9675675675675676,
+        "UAV_number": 2
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "transmission_power": 40,
+        "road_length": 1000,
+        "best_position": [
+            594.0445728240192,
+            179.05292562102503,
+            340.19376224480794
+        ],
+        "best_fitness": -0.9945945945945944,
+        "UAV_number": 3
+    }
+]

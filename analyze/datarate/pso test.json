@@ -1,0 +1,92 @@
+[
+    {
+        "data_rate(mbit)": 5000000,
+        "road_length": 1000,
+        "best_position": [
+            246.9765872221251
+        ],
+        "best_fitness": -0.7218045112781956,
+        "UAV_number": 1
+    },
+    {
+        "data_rate(mbit)": 5000000,
+        "road_length": 1000,
+        "best_position": [
+            334.0515081332798,
+            449.6363650091933
+        ],
+        "best_fitness": -0.9774436090225566,
+        "UAV_number": 2
+    },
+    {
+        "data_rate(mbit)": 5000000,
+        "road_length": 1000,
+        "best_position": [
+            449.7911167710447,
+            528.9355753579947,
+            298.813908521138
+        ],
+        "best_fitness": -1.0,
+        "UAV_number": 3
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 1000,
+        "best_position": [
+            224.17831839757514
+        ],
+        "best_fitness": -0.6390977443609023,
+        "UAV_number": 1
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 1000,
+        "best_position": [
+            241.79394625392447,
+            195.44637066214182
+        ],
+        "best_fitness": -0.8872180451127819,
+        "UAV_number": 2
+    },
+    {
+        "data_rate(mbit)": 7000000,
+        "road_length": 1000,
+        "best_position": [
+            411.9795898563738,
+            597.9055940183878,
+            174.64202094388136
+        ],
+        "best_fitness": -0.9724310776942354,
+        "UAV_number": 3
+    },
+    {
+        "data_rate(mbit)": 9000000,
+        "road_length": 1000,
+        "best_position": [
+            707.7590609765026
+        ],
+        "best_fitness": -0.36015037593985,
+        "UAV_number": 1
+    },
+    {
+        "data_rate(mbit)": 9000000,
+        "road_length": 1000,
+        "best_position": [
+            557.6156901164555,
+            407.0476838069237
+        ],
+        "best_fitness": -0.6241604010025062,
+        "UAV_number": 2
+    },
+    {
+        "data_rate(mbit)": 9000000,
+        "road_length": 1000,
+        "best_position": [
+            370.27517671507695,
+            243.78248116078115,
+            804.7868494667331
+        ],
+        "best_fitness": -0.7695989974937343,
+        "UAV_number": 3
+    }
+]
